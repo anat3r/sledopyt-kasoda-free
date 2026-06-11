@@ -1,0 +1,37 @@
+{
+ "_id": "6W9V00HH8Bpi2vkH",
+ "name": "# Тактика охоты — варианты",
+ "type": "feat",
+ "img": "icons/skills/targeting/target-strike-triple-blue.webp",
+ "system": {
+  "description": {
+   "value": "<p>На 3-м уровне вы выбираете тактический приём, определяющий ваш стиль борьбы с сильными врагами. Выберите один из двух вариантов ниже.</p><p>Тактику можно сменить во время <strong>Короткого или Долгого отдыха</strong> — просто удалите текущую черту и перетащите другую из компендиума.</p><hr><h3>Варианты</h3><ul><li>@UUID[Compendium.sledopyt-kasoda-free.features.Item.cRYRJXVtH7pk2x4x]{Охотник: Убийца колоссов} — дополнительный урон 1d8 за каждую категорию размера крупнее вас.</li><li>@UUID[Compendium.sledopyt-kasoda-free.features.Item.9CQyaQZX9spH9HRR]{Охотник: Сокрушитель орд} — дополнительная атака по соседнему существу при атаке по Добыче.</li></ul><hr><p><em style=\"color:#555\">Эта черта — каталог вариантов выбора. Выбранная Тактика охоты выдаётся автоматически через Advancement на 3-м уровне (ItemChoice) и отображается на листе персонажа. При смене — используйте перетаскивание из компендиума после удаления текущей.</em></p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "hunter-tactics-catalog",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 3 (Охотник)",
+  "properties": [],
+  "advancement": []
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 3100,
+ "flags": {
+  "sledopyt-kasoda-free": {
+   "level": 3
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!6W9V00HH8Bpi2vkH"
+}

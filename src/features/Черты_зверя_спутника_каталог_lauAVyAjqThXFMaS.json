@@ -1,0 +1,37 @@
+{
+ "_id": "lauAVyAjqThXFMaS",
+ "name": "# Черты Зверя-спутника",
+ "type": "feat",
+ "img": "icons/magic/nature/wolf-paw-glow-teal-blue.webp",
+ "system": {
+  "description": {
+   "value": "<p>Начиная с 7-го уровня ваш Зверь-спутник обретает особые способности — <strong>черты</strong>, которые вы выбираете по мере роста. Черты отражают обучение, совместный опыт и особую связь между вами и Зверем.</p><table><thead><tr><th>Уровень Следопыта</th><th>Черты зверя</th></tr></thead><tbody><tr><td>7</td><td>3</td></tr><tr><td>11</td><td>4</td></tr><tr><td>15</td><td>5</td></tr></tbody></table><p>На 7-м уровне выберите 3 черты из группы <em>«Начальные»</em>. На 11-м и 15-м уровнях вы добавляете ещё по одной черте из всего списка (включая черты уровня 11+).</p><p>При повышении уровня черты можно заменить на другие доступные — это отражает совместный путь обучения.</p><hr><h3>Начальные черты (7-й уровень)</h3><ul><li>@UUID[Compendium.sledopyt-kasoda-free.features.Item.0tVte5AYt3ifjB7f]{Звериная мощь} — дополнительный урон от атак зверя.</li><li>@UUID[Compendium.sledopyt-kasoda-free.features.Item.zD26sNhWCZYzOVPD]{Адаптируемое передвижение} — дополнительные скорости передвижения.</li><li>@UUID[Compendium.sledopyt-kasoda-free.features.Item.Sxfu9yMK33V7ti0I]{Зверь-преследователь} — помехи врагам при уходе.</li><li>@UUID[Compendium.sledopyt-kasoda-free.features.Item.3n74Yc2TPdiMXxRx]{Природный камуфляж} — преимущество к Скрытности в определённой местности.</li></ul><h3>Черты 11-го уровня</h3><ul><li>@UUID[Compendium.sledopyt-kasoda-free.features.Item.a8xvYGhgSVxTUEpZ]{Неуловимый зверь} — иммунитет к очарованию и страху, нельзя застать врасплох.</li><li>@UUID[Compendium.sledopyt-kasoda-free.features.Item.7fLRWHYP562ommbT]{Стайный охотник} — союзники в пределах 5 фут. получают преимущество против цели зверя.</li><li>@UUID[Compendium.sledopyt-kasoda-free.features.Item.jf6qiCgmWpQqReos]{Кровожадный охотник} — дополнительная атака против ослабленных врагов.</li></ul><hr><p><em style=\"color:#555\">Черты выдаются через «Зачарованный спутник» (Advancement → ItemChoice на 7/11/15 уровнях). Выбранные черты появятся на листе вашего Следопыта. Перетащите их Active Effects на токен зверя, чтобы применить бонусы. Черты отмечены флагом beastTrait и применяются к зверю автоматически при призыве через Статуэтку.</em></p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "bm-beast-traits-catalog",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 7 (Повелитель зверей)",
+  "properties": [],
+  "advancement": []
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 7100,
+ "flags": {
+  "sledopyt-kasoda-free": {
+   "level": 7
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!lauAVyAjqThXFMaS"
+}

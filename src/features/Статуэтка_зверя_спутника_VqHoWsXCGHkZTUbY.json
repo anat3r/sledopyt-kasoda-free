@@ -1,0 +1,96 @@
+{
+ "_id": "VqHoWsXCGHkZTUbY",
+ "name": "Статуэтка Зверя-спутника",
+ "type": "loot",
+ "img": "icons/commodities/treasure/figurine-idol.webp",
+ "system": {
+  "description": {
+   "value": "<p>Крошечная чудесная статуэтка, хранящая отпечатки Зверей-спутников. Может использоваться в качестве заклинательной фокусировки для заклинаний Следопыта.</p><p>В статуэтке хранится до <strong>@prof</strong> отпечатков. Каждый отпечаток — это Зверь, с которым вы установили связь. Вы можете призвать любого из них или переключить активного спутника во время Долгого отдыха.</p><hr><p><strong>Привязать существо</strong> — привязывает нового Зверя к статуэтке. Открывает список доступных актёров. Занимает один слот отпечатка (максимум @prof). Если все слоты заняты, один из существующих отпечатков будет утерян.</p><p><strong>Призвать Зверя</strong> — выбирает из сохранённых отпечатков и ставит токен Зверя на текущую сцену. Черты спутника применяются автоматически.</p><hr><p><em>Потеря статуэтки.</em> Если вы потеряете статуэтку, потратьте 1 час на создание новой (в течение Короткого или Долгого отдыха). Все отпечатки при этом теряются.</p><hr><p><em style=\"color:#666\">Технические примечания: статуэтка хранит UUID актёров-спутников в своих флагах. Для привязки зверя из компендиума — сначала импортируйте его в мир (Компендиум → ПКМ → Импортировать), после чего мастер передаёт право владения (настройки актёра → Разрешения). Затем он появится в списке «Актёры мира» при нажатии «Привязать существо». Черты спутника, выбранные в рамках «Зачарованного спутника», хранятся на листе Следопыта и автоматически применяются к токену зверя при призыве.</em></p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "quantity": 1,
+  "weight": { "value": 0, "units": "lb" },
+  "price": { "value": 0, "denomination": "gp" },
+  "attunement": "",
+  "equipped": false,
+  "rarity": "uncommon",
+  "identified": true,
+  "uses": {
+   "spent": 0,
+   "max": "@prof",
+   "recovery": [
+    { "period": "lr", "type": "recoverAll", "formula": "" }
+   ]
+  },
+  "activities": {
+   "gxmZmRlXKNKfwLA7": {
+    "_id": "gxmZmRlXKNKfwLA7",
+    "type": "utility",
+    "sort": 100,
+    "name": "Привязать существо",
+    "activation": { "type": "action", "value": null, "override": false, "condition": "" },
+    "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+    "description": { "chatFlavor": "Открывает список доступных актёров для привязки к статуэтке." },
+    "duration": { "units": "inst", "concentration": false, "override": false },
+    "effects": [],
+    "range": { "units": "self", "override": false, "special": "" },
+    "target": {
+     "template": { "contiguous": false, "units": "ft", "type": "" },
+     "affects": { "choice": false, "type": "" },
+     "override": false,
+     "prompt": false
+    },
+    "uses": { "spent": 0, "recovery": [], "max": "" },
+    "roll": {
+     "prompt": false,
+     "visible": false,
+     "name": "",
+     "formula": ""
+    }
+   },
+   "j8GuHvtcBOjhL15E": {
+    "_id": "j8GuHvtcBOjhL15E",
+    "type": "utility",
+    "sort": 200,
+    "name": "Призвать Зверя",
+    "activation": { "type": "action", "value": null, "override": false, "condition": "" },
+    "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+    "description": { "chatFlavor": "Призывает сохранённого Зверя-спутника на сцену." },
+    "duration": { "units": "inst", "concentration": false, "override": false },
+    "effects": [],
+    "range": { "units": "self", "override": false, "special": "" },
+    "target": {
+     "template": { "contiguous": false, "units": "ft", "type": "" },
+     "affects": { "choice": false, "type": "" },
+     "override": false,
+     "prompt": false
+    },
+    "uses": { "spent": 0, "recovery": [], "max": "" },
+    "roll": {
+     "prompt": false,
+     "visible": false,
+     "name": "",
+     "formula": ""
+    }
+   }
+  }
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 3100,
+ "flags": {
+  "sledopyt-kasoda-free": {
+   "isFigurine": true,
+   "level": 3,
+   "imprints": [],
+   "activeImprint": null
+  }
+ },
+ "_stats": { "systemId": "dnd5e" },
+ "_key": "!items!VqHoWsXCGHkZTUbY"
+}

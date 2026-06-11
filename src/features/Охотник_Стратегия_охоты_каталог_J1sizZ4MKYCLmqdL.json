@@ -1,0 +1,37 @@
+{
+ "_id": "J1sizZ4MKYCLmqdL",
+ "name": "# Стратегия охоты — варианты",
+ "type": "feat",
+ "img": "icons/equipment/shield/heater-crystal-blue.webp",
+ "system": {
+  "description": {
+   "value": "<p>На 7-м уровне вы усваиваете продвинутую стратегию охоты. Выберите один из двух вариантов ниже.</p><p>Стратегию можно сменить во время <strong>Долгого отдыха</strong> — просто удалите текущую черту и перетащите другую из компендиума.</p><hr><h3>Варианты</h3><ul><li>@UUID[Compendium.sledopyt-kasoda-free.features.Item.jnTqiD9LfBz8nDJy]{Охотник: Стремительный охотник} — +10 фт к скорости, Рывок/Отход/Засада бонусным действием, двойной урон по Добыче из тени.</li><li>@UUID[Compendium.sledopyt-kasoda-free.features.Item.rCy2dxClVRArBmSp]{Охотник: Сокрушитель армий} — +2 КД (или +3 от Добычи) каждый раз, когда по вам попадают.</li></ul><hr><p><em style=\"color:#555\">Эта черта — каталог вариантов выбора. Выбранная Стратегия охоты выдаётся автоматически через Advancement на 7-м уровне (ItemChoice) и отображается на листе персонажа. При смене — используйте перетаскивание из компендиума после удаления текущей.</em></p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "hunter-strategies-catalog",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 7 (Охотник)",
+  "properties": [],
+  "advancement": []
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 7100,
+ "flags": {
+  "sledopyt-kasoda-free": {
+   "level": 7
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!J1sizZ4MKYCLmqdL"
+}
