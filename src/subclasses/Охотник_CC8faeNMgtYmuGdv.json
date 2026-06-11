@@ -30,7 +30,7 @@
     "configuration": {
      "items": [
       {
-       "uuid": "Compendium.sledopyt-kasoda.features.Item.4k27BleA7HO5TObl",
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.4k27BleA7HO5TObl",
        "optional": false
       }
      ],
@@ -69,10 +69,10 @@
      "type": "feat",
      "pool": [
       {
-       "uuid": "Compendium.sledopyt-kasoda.features.Item.cRYRJXVtH7pk2x4x"
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.cRYRJXVtH7pk2x4x"
       },
       {
-       "uuid": "Compendium.sledopyt-kasoda.features.Item.9CQyaQZX9spH9HRR"
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.9CQyaQZX9spH9HRR"
       }
      ],
      "spell": {
@@ -115,10 +115,10 @@
      "type": "feat",
      "pool": [
       {
-       "uuid": "Compendium.sledopyt-kasoda.features.Item.jnTqiD9LfBz8nDJy"
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.jnTqiD9LfBz8nDJy"
       },
       {
-       "uuid": "Compendium.sledopyt-kasoda.features.Item.rCy2dxClVRArBmSp"
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.rCy2dxClVRArBmSp"
       }
      ],
      "spell": {
@@ -150,7 +150,7 @@
     "configuration": {
      "items": [
       {
-       "uuid": "Compendium.sledopyt-kasoda.features.Item.NvTXOu8tmTotPjmo",
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.NvTXOu8tmTotPjmo",
        "optional": false
       }
      ],
@@ -178,7 +178,7 @@
     "configuration": {
      "items": [
       {
-       "uuid": "Compendium.sledopyt-kasoda.features.Item.AW83AFtWRxQZ0sGu",
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.AW83AFtWRxQZ0sGu",
        "optional": false
       }
      ],

@@ -347,19 +347,19 @@
     "configuration": {
      "items": [
       {
-       "uuid": "Compendium.sledopyt-kasoda.features.Item.OeJI3ANUXBfk9Z7N",
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.OeJI3ANUXBfk9Z7N",
        "optional": false
       },
       {
-       "uuid": "Compendium.sledopyt-kasoda.features.Item.Q7dAjWvcg9aIPrNX",
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.Q7dAjWvcg9aIPrNX",
        "optional": false
       },
       {
-       "uuid": "Compendium.sledopyt-kasoda.features.Item.QJgSMURL6sYTV7HR",
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.QJgSMURL6sYTV7HR",
        "optional": false
       },
       {
-       "uuid": "Compendium.sledopyt-kasoda.features.Item.mgJ7KQDWgocmv37j",
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.mgJ7KQDWgocmv37j",
        "optional": false
       }
      ],
@@ -387,7 +387,7 @@
     "configuration": {
      "items": [
       {
-       "uuid": "Compendium.sledopyt-kasoda.features.Item.hehEejev7GwrhLeu",
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.hehEejev7GwrhLeu",
        "optional": false
       }
      ],
@@ -415,7 +415,7 @@
     "configuration": {
      "items": [
       {
-       "uuid": "Compendium.sledopyt-kasoda.features.Item.2oVfNFtsqeBvzTwx",
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.2oVfNFtsqeBvzTwx",
        "optional": false
       }
      ],
@@ -443,7 +443,7 @@
     "configuration": {
      "items": [
       {
-       "uuid": "Compendium.sledopyt-kasoda.features.Item.DtMxjwfLyzhsXiMk",
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.DtMxjwfLyzhsXiMk",
        "optional": false
       }
      ],
@@ -471,7 +471,7 @@
     "configuration": {
      "items": [
       {
-       "uuid": "Compendium.sledopyt-kasoda.features.Item.cgwnjgqKSz1gW68l",
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.cgwnjgqKSz1gW68l",
        "optional": false
       }
      ],
@@ -499,11 +499,11 @@
     "configuration": {
      "items": [
       {
-       "uuid": "Compendium.sledopyt-kasoda.features.Item.3VFWOMACjn3RBYoU",
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.3VFWOMACjn3RBYoU",
        "optional": false
       },
       {
-       "uuid": "Compendium.sledopyt-kasoda.features.Item.EjjkuF5SlWGV2FJN",
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.EjjkuF5SlWGV2FJN",
        "optional": false
       }
      ],
@@ -531,7 +531,7 @@
     "configuration": {
      "items": [
       {
-       "uuid": "Compendium.sledopyt-kasoda.features.Item.SyoDugvogo9j3Jap",
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.SyoDugvogo9j3Jap",
        "optional": false
       }
      ],
@@ -559,7 +559,7 @@
     "configuration": {
      "items": [
       {
-       "uuid": "Compendium.sledopyt-kasoda.features.Item.h8m9M9l4MUcvpuKd",
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.h8m9M9l4MUcvpuKd",
        "optional": false
       }
      ],
@@ -587,7 +587,7 @@
     "configuration": {
      "items": [
       {
-       "uuid": "Compendium.sledopyt-kasoda.features.Item.NO6xJwBWLwg1I4qe",
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.NO6xJwBWLwg1I4qe",
        "optional": false
       }
      ],
@@ -615,7 +615,7 @@
     "configuration": {
      "items": [
       {
-       "uuid": "Compendium.sledopyt-kasoda.features.Item.Au1ZFSIzwONeWvTs",
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.Au1ZFSIzwONeWvTs",
        "optional": false
       }
      ],
@@ -643,7 +643,7 @@
     "configuration": {
      "items": [
       {
-       "uuid": "Compendium.sledopyt-kasoda.features.Item.KqC4JaozFGV8RZtJ",
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.KqC4JaozFGV8RZtJ",
        "optional": false
       }
      ],
@@ -671,7 +671,7 @@
     "configuration": {
      "items": [
       {
-       "uuid": "Compendium.sledopyt-kasoda.features.Item.UNz0oaAMO7USfqVF",
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.UNz0oaAMO7USfqVF",
        "optional": false
       }
      ],
@@ -699,7 +699,7 @@
     "configuration": {
      "items": [
       {
-       "uuid": "Compendium.sledopyt-kasoda.features.Item.KVjEur9nq6AALXYJ",
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.KVjEur9nq6AALXYJ",
        "optional": false
       }
      ],

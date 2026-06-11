@@ -3,7 +3,7 @@
  * При входе в мир, если модуль Laaru•Compendium•DnD14 не активен, показывает
  * ГМу предупреждение: ссылки на заклинания и боевые стили не разрешатся без него.
  */
-const MODULE_ID = "sledopyt-kasoda";
+const MODULE_ID = "sledopyt-kasoda-free";
 const LAARU_ID = "laaru-dnd5-hw";
 
 Hooks.once("ready", () => {

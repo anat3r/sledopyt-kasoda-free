@@ -1,9 +1,9 @@
 {
-  "id": "sledopyt-kasoda",
-  "title": "Альтернативный Следопыт (Kasoda)",
-  "description": "<p>Альтернативный Следопыт от Kasoda (v1.1) — полная переработка класса для D&D 5e. Класс 1–20, сигнатурная механика «Бесконечная охота», сверхъестественная адаптация к местности и подклассы.</p><p>Заклинания и боевые стили линкуются из модуля Laaru•Compendium•DnD14.</p>",
-  "version": "0.3.1",
-  "license": "Неофициальная адаптация. Игровой контент © Kasoda / Svinomatus (boosty.to/kasoda) — все права у автора оригинала, распространение по его разрешению. Код сборки (tools/, scripts/, .github/) — MIT. См. LICENSE.",
+  "id": "sledopyt-kasoda-free",
+  "title": "Альтернативный Следопыт (Kasoda) — бесплатная версия",
+  "description": "<p>Бесплатная (демонстрационная) редакция альтернативного Следопыта от Kasoda для D&D 5e. Основана на бесплатной версии PDF: полный класс 1–20 с сигнатурной механикой «Бесконечная охота» и сверхъестественной адаптацией к местности, плюс два подкласса — <strong>Охотник</strong> и <strong>Повелитель зверей</strong>.</p><p>Заклинания и боевые стили линкуются из модуля Laaru•Compendium•DnD14 (по желанию). Полная версия со всеми 10 подклассами распространяется отдельно.</p>",
+  "version": "0.1.0",
+  "license": "Неофициальная адаптация. Игровой контент © Kasoda / Svinomatus (boosty.to/kasoda) — все права у автора оригинала. Эта редакция основана на бесплатной версии PDF и распространяется как демонстрация. Код сборки (tools/, scripts/, .github/) — MIT. См. LICENSE.",
   "authors": [
     {
       "name": "Реализация в Foundry: сборка по PDF Kasoda v1.1"
@@ -84,11 +84,11 @@
     }
   ],
   "languages": [],
-  "url": "https://github.com/anat3r/sledopyt-kasoda-dist",
-  "readme": "https://github.com/anat3r/sledopyt-kasoda-dist/blob/main/README.md",
-  "bugs": "https://github.com/anat3r/sledopyt-kasoda-dist/issues",
-  "manifest": "https://github.com/anat3r/sledopyt-kasoda-dist/releases/latest/download/module.json",
-  "download": "https://github.com/anat3r/sledopyt-kasoda-dist/releases/download/v0.3.1/module.zip",
+  "url": "https://github.com/anat3r/sledopyt-kasoda-free",
+  "readme": "https://github.com/anat3r/sledopyt-kasoda-free/blob/main/README.md",
+  "bugs": "https://github.com/anat3r/sledopyt-kasoda-free/issues",
+  "manifest": "https://github.com/anat3r/sledopyt-kasoda-free/releases/latest/download/module.json",
+  "download": "https://github.com/anat3r/sledopyt-kasoda-free/releases/download/v0.1.0/module.zip",
   "esmodules": [
     "scripts/dependency-check.js"
   ]

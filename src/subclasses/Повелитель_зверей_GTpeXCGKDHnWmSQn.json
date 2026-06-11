@@ -1,0 +1,145 @@
+{
+ "_id": "GTpeXCGKDHnWmSQn",
+ "name": "Повелитель зверей",
+ "type": "subclass",
+ "img": "icons/magic/nature/wolf-paw-glow-small-teal.webp",
+ "system": {
+  "description": {
+   "value": "<p>Повелитель зверей воплощает дружбу между цивилизацией и зверями дикого мира. Объединяя усилия, зверь и следопыт работают как одно целое, борясь с чудовищными врагами, угрожающими цивилизации и дикой природе.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "beast-master",
+  "classIdentifier": "sledopyt",
+  "spellcasting": {
+   "progression": "none",
+   "ability": ""
+  },
+  "advancement": [
+   {
+    "_id": "anIqqv9b8f2Hc8Rf",
+    "type": "ItemGrant",
+    "level": 3,
+    "title": "Спутник следопыта",
+    "icon": null,
+    "value": {},
+    "configuration": {
+     "items": [
+      {
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.7fvEaJrpwGVaZPOG",
+       "optional": false
+      }
+     ],
+     "optional": false,
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     }
+    }
+   },
+   {
+    "_id": "0ljVAQvgcd5gtQXV",
+    "type": "ItemGrant",
+    "level": 7,
+    "title": "Зачарованный спутник",
+    "icon": null,
+    "value": {},
+    "configuration": {
+     "items": [
+      {
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.G57qjfn6BDQdEDez",
+       "optional": false
+      }
+     ],
+     "optional": false,
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     }
+    }
+   },
+   {
+    "_id": "nnOztVrZ0lQBEbvs",
+    "type": "ItemGrant",
+    "level": 11,
+    "title": "Могучий спутник",
+    "icon": null,
+    "value": {},
+    "configuration": {
+     "items": [
+      {
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.M02QMIJxDjMfDNKo",
+       "optional": false
+      }
+     ],
+     "optional": false,
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     }
+    }
+   },
+   {
+    "_id": "XHkrkzJp43sngzun",
+    "type": "ItemGrant",
+    "level": 15,
+    "title": "Неразрывная связь",
+    "icon": null,
+    "value": {},
+    "configuration": {
+     "items": [
+      {
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.fwOKc61X7yibuJUo",
+       "optional": false
+      }
+     ],
+     "optional": false,
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     }
+    }
+   }
+  ]
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "flags": {},
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!GTpeXCGKDHnWmSQn"
+}

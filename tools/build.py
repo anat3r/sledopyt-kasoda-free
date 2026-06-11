@@ -2,7 +2,11 @@
 # -*- coding: utf-8 -*-
 import json, os, re
 import os as _os
-SRC=_os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))),"src"); MODULE="sledopyt-kasoda"
+ROOT=_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))
+SRC=_os.path.join(ROOT,"src")
+# Single source of truth: module id is read from module.json so that grant UUIDs
+# (Compendium.<MODULE>.features...) always match what validate.mjs expects on this branch.
+MODULE=json.load(open(_os.path.join(ROOT,"module.json"),encoding="utf-8"))["id"]
 SOURCE={"custom":"Альтернативный Следопыт (Kasoda) v1.1","rules":"2024","revision":1}
 import hashlib
 _B62="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -181,7 +185,7 @@ for f in FEATURES:
         aid=mid("ACT"+f["key"])
         item["system"]["activities"]=build_activity(aid,f.get("activation"),bool(f.get("uses")),f.get("template"))
     fn=re.sub(r'[^0-9A-Za-zА-Яа-я]+','_',f["name"]).strip('_')
-    json.dump(item,open(f"{SRC}/features/{fn}_{fid}.json","w"),ensure_ascii=False,indent=1)
+    json.dump(item,open(f"{SRC}/features/{fn}_{fid}.json","w",encoding="utf-8"),ensure_ascii=False,indent=1)
 print("features:",len(FEATURES))
 
 # ---------- advancement builders ----------
@@ -255,6 +259,6 @@ cls={"_id":mid("CLASSsledopyt"),"name":"Альтернативный Следо�
    "spellcasting":{"progression":"half","ability":"wis","preparation":{"formula":""}},
    "wealth":"7","primaryAbility":{"value":["dex","wis"],"all":False}},
  "effects":[],"folder":None,"sort":0,"flags":{},"_stats":{"systemId":"dnd5e"},"_key":"!items!"+mid("CLASSsledopyt")}
-json.dump(cls,open(f"{SRC}/class/Альтернативный_Следопыт_{cls['_id']}.json","w"),ensure_ascii=False,indent=1)
+json.dump(cls,open(f"{SRC}/class/Альтернативный_Следопыт_{cls['_id']}.json","w",encoding="utf-8"),ensure_ascii=False,indent=1)
 print("class advancements:",len(adv))
 print("OK")
