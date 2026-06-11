@@ -59,6 +59,19 @@ for (const { doc, file } of allDocs) {
   }
 }
 
+// Manifest sanity: relationship entries must use a valid package `type`
+// (world|system|module). Foundry rejects the whole manifest otherwise — e.g.
+// type:"requires" under relationships.systems fails install with
+// "requires is not a valid choice".
+const PKG_TYPES = new Set(["world", "system", "module"]);
+const manifest = JSON.parse(readFileSync(join(ROOT, "module.json"), "utf8"));
+for (const key of ["systems", "requires", "recommends", "conflicts"]) {
+  for (const rel of manifest.relationships?.[key] ?? []) {
+    if (rel.type && !PKG_TYPES.has(rel.type))
+      errors.push(`module.json relationships.${key}: "${rel.id}" has invalid type "${rel.type}" (use world|system|module)`);
+  }
+}
+
 console.log(`Validated ${allDocs.length} documents across packs.`);
 if (errors.length) {
   console.error(`\n${errors.length} error(s):`);
