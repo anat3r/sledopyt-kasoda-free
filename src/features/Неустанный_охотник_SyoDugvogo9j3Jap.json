@@ -1,0 +1,37 @@
+{
+ "_id": "SyoDugvogo9j3Jap",
+ "name": "Неустанный охотник",
+ "type": "feat",
+ "img": "icons/magic/control/buff-strength-muscle-damage-red.webp",
+ "system": {
+  "description": {
+   "value": "<p>Вы можете завершить Долгий отдых после 4 часов сна, оставаясь в сознании.</p><p>Концентрация не прерывает Короткий и Долгий отдых. В конце Короткого отдыха истощение −1, если вы не концентрировались на заклинании.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "neustannyj-ohotnik",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 10",
+  "properties": [],
+  "advancement": []
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 10000,
+ "flags": {
+  "sledopyt-kasoda": {
+   "level": 10
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!SyoDugvogo9j3Jap"
+}

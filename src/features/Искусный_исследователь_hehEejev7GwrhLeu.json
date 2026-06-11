@@ -1,0 +1,37 @@
+{
+ "_id": "hehEejev7GwrhLeu",
+ "name": "Искусный исследователь",
+ "type": "feat",
+ "img": "icons/tools/navigation/map-marked-green.webp",
+ "system": {
+  "description": {
+   "value": "<p><strong>Компетенция.</strong> Выберите навык, которым владеете. Бонус мастерства удваивается для проверок этим навыком.</p><p><strong>Языки.</strong> Изучаете два языка.</p><p>На <strong>9-м уровне</strong> — ещё один навык для Компетенции и ещё один язык.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "iskusnyj-issledovatel",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 2",
+  "properties": [],
+  "advancement": []
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 2000,
+ "flags": {
+  "sledopyt-kasoda": {
+   "level": 2
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!hehEejev7GwrhLeu"
+}

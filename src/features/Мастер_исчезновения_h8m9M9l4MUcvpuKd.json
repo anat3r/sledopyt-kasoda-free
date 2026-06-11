@@ -1,0 +1,125 @@
+{
+ "_id": "h8m9M9l4MUcvpuKd",
+ "name": "Мастер исчезновения",
+ "type": "feat",
+ "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+ "system": {
+  "description": {
+   "value": "<p>Вы можете совершать действие Засада Бонусным действием.</p><p>Оказавшись на линии обзора существа, вы можете Реакцией стать Невидимым до конца своего следующего хода.</p><p><em>Использований: Бонус мастерства; восстановление после Долгого отдыха.</em></p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "master-ischeznoveniya",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 13",
+  "properties": [],
+  "advancement": [],
+  "uses": {
+   "spent": 0,
+   "max": "@prof",
+   "recovery": [
+    {
+     "period": "lr",
+     "type": "recoverAll",
+     "formula": ""
+    }
+   ]
+  },
+  "activities": {
+   "0qIauphUE19XGAS8": {
+    "_id": "0qIauphUE19XGAS8",
+    "type": "utility",
+    "activation": {
+     "type": "reaction",
+     "value": 1,
+     "condition": "",
+     "override": false
+    },
+    "consumption": {
+     "targets": [
+      {
+       "type": "itemUses",
+       "target": "",
+       "value": "1",
+       "scaling": {
+        "mode": "",
+        "formula": ""
+       }
+      }
+     ],
+     "scaling": {
+      "allowed": false,
+      "max": ""
+     },
+     "spellSlot": false
+    },
+    "description": {
+     "chatFlavor": ""
+    },
+    "duration": {
+     "concentration": false,
+     "value": "",
+     "units": "",
+     "special": "",
+     "override": false
+    },
+    "effects": [],
+    "range": {
+     "units": "",
+     "special": "",
+     "override": false
+    },
+    "target": {
+     "template": {
+      "count": "",
+      "contiguous": false,
+      "type": "",
+      "size": "",
+      "width": "",
+      "height": "",
+      "units": ""
+     },
+     "affects": {
+      "count": "",
+      "type": "",
+      "choice": false,
+      "special": ""
+     },
+     "prompt": true,
+     "override": false
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "roll": {
+     "formula": "",
+     "name": "",
+     "prompt": false,
+     "visible": false
+    },
+    "sort": 0
+   }
+  }
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 13000,
+ "flags": {
+  "sledopyt-kasoda": {
+   "level": 13
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!h8m9M9l4MUcvpuKd"
+}

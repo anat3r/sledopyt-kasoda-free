@@ -1,0 +1,125 @@
+{
+ "_id": "2oVfNFtsqeBvzTwx",
+ "name": "Первозданная осведомлённость",
+ "type": "feat",
+ "img": "icons/magic/perception/eye-tendrils-web-purple.webp",
+ "system": {
+  "description": {
+   "value": "<p>Действием вы сосредотачиваетесь на познании пространства. 10 минут вы ощущаете существ одного вида в 1 миле (6 миль — в адаптированной местности): Аберрации, Драконы, Исчадия, Небожители, Нежить, Феи или Элементали.</p><p>В 500 фт (1000 фт в адаптированной местности) узнаёте направление к ним. Цель Охоты рядом — узнаёте о ней независимо от вида.</p><p>Добавляете модификатор Мудрости к Интеллекту (Расследование).</p><p><em>Использований: 1 + мод. Мудрости; восстановление после Долгого отдыха.</em></p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "pervozdannaya-osvedomlennost",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 3",
+  "properties": [],
+  "advancement": [],
+  "uses": {
+   "spent": 0,
+   "max": "1 + @abilities.wis.mod",
+   "recovery": [
+    {
+     "period": "lr",
+     "type": "recoverAll",
+     "formula": ""
+    }
+   ]
+  },
+  "activities": {
+   "njUT7mCkBXS4awDA": {
+    "_id": "njUT7mCkBXS4awDA",
+    "type": "utility",
+    "activation": {
+     "type": "action",
+     "value": 1,
+     "condition": "",
+     "override": false
+    },
+    "consumption": {
+     "targets": [
+      {
+       "type": "itemUses",
+       "target": "",
+       "value": "1",
+       "scaling": {
+        "mode": "",
+        "formula": ""
+       }
+      }
+     ],
+     "scaling": {
+      "allowed": false,
+      "max": ""
+     },
+     "spellSlot": false
+    },
+    "description": {
+     "chatFlavor": ""
+    },
+    "duration": {
+     "concentration": false,
+     "value": "",
+     "units": "",
+     "special": "",
+     "override": false
+    },
+    "effects": [],
+    "range": {
+     "units": "",
+     "special": "",
+     "override": false
+    },
+    "target": {
+     "template": {
+      "count": "",
+      "contiguous": false,
+      "type": "",
+      "size": "",
+      "width": "",
+      "height": "",
+      "units": ""
+     },
+     "affects": {
+      "count": "",
+      "type": "",
+      "choice": false,
+      "special": ""
+     },
+     "prompt": true,
+     "override": false
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "roll": {
+     "formula": "",
+     "name": "",
+     "prompt": false,
+     "visible": false
+    },
+    "sort": 0
+   }
+  }
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 3000,
+ "flags": {
+  "sledopyt-kasoda": {
+   "level": 3
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!2oVfNFtsqeBvzTwx"
+}

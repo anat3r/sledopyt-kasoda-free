@@ -1,0 +1,49 @@
+name: Release
+
+# Publish a GitHub Release named like "v0.4.0" — this workflow builds the
+# packs, stamps module.json with the version + download URL, zips the module,
+# and attaches module.json + module.zip to that release. The stable install URL
+# is always: https://github.com/<owner>/<repo>/releases/latest/download/module.json
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate sources
+        run: npm run validate
+
+      - name: Stamp module.json (version + URLs from the release tag)
+        env:
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: node tools/update-manifest.mjs
+
+      - name: Compile compendium packs
+        run: npm run pack
+
+      - name: Create module.zip (files at archive root)
+        run: zip -r module.zip module.json README.md LICENSE packs -x '*/LOCK'
+
+      - name: Attach assets to the release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            module.json
+            module.zip

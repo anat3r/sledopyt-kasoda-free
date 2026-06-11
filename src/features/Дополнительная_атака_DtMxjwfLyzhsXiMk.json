@@ -1,0 +1,37 @@
+{
+ "_id": "DtMxjwfLyzhsXiMk",
+ "name": "Дополнительная атака",
+ "type": "feat",
+ "img": "icons/skills/melee/blade-tips-triple-bronze.webp",
+ "system": {
+  "description": {
+   "value": "<p>Когда в свой ход вы совершаете действие Атака, вы можете совершить две атаки вместо одной.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "dopolnitelnaya-ataka",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 5",
+  "properties": [],
+  "advancement": []
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 5000,
+ "flags": {
+  "sledopyt-kasoda": {
+   "level": 5
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!DtMxjwfLyzhsXiMk"
+}

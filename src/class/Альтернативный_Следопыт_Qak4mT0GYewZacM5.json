@@ -1,0 +1,745 @@
+{
+ "_id": "Qak4mT0GYewZacM5",
+ "name": "Альтернативный Следопыт",
+ "type": "class",
+ "img": "icons/magic/nature/elk-running-grass-green.webp",
+ "system": {
+  "description": {
+   "value": "<p>Вдали от суеты городов, в дебрях лесов и на просторах равнин следопыты несут свой вечный дозор. Благодаря связи с природой они творят заклинания, оттачивая таланты и магию со смертельным упорством.</p><p><em>Альтернативный Следопыт от Kasoda, версия 1.1.</em></p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "sledopyt",
+  "levels": 1,
+  "hitDice": "d10",
+  "hitDiceUsed": 0,
+  "advancement": [
+   {
+    "_id": "ZRmTOIMyuh4lmUeI",
+    "type": "HitPoints",
+    "configuration": {},
+    "value": {},
+    "title": "",
+    "hint": ""
+   },
+   {
+    "_id": "9U8uudcaZ3aMiVxQ",
+    "type": "Trait",
+    "level": 1,
+    "title": "",
+    "value": {
+     "chosen": []
+    },
+    "configuration": {
+     "mode": "default",
+     "allowReplacements": false,
+     "grants": [
+      "saves:con",
+      "saves:wis"
+     ],
+     "choices": []
+    },
+    "classRestriction": "primary"
+   },
+   {
+    "_id": "6aJi8QTd4SnJFgzp",
+    "type": "Trait",
+    "level": 1,
+    "title": "",
+    "value": {
+     "chosen": []
+    },
+    "configuration": {
+     "mode": "default",
+     "allowReplacements": false,
+     "grants": [
+      "armor:lgt",
+      "armor:med",
+      "armor:shl"
+     ],
+     "choices": []
+    }
+   },
+   {
+    "_id": "iWjUz0zgAd90oQ6E",
+    "type": "Trait",
+    "level": 1,
+    "title": "",
+    "value": {
+     "chosen": []
+    },
+    "configuration": {
+     "mode": "default",
+     "allowReplacements": false,
+     "grants": [
+      "weapon:sim",
+      "weapon:mar"
+     ],
+     "choices": []
+    }
+   },
+   {
+    "_id": "5L8vRNiah5mOQnED",
+    "type": "Trait",
+    "level": 1,
+    "title": "Навыки следопыта",
+    "value": {
+     "chosen": []
+    },
+    "configuration": {
+     "mode": "default",
+     "allowReplacements": false,
+     "grants": [],
+     "choices": [
+      {
+       "count": 3,
+       "pool": [
+        "skills:ath",
+        "skills:prc",
+        "skills:sur",
+        "skills:ani",
+        "skills:nat",
+        "skills:ins",
+        "skills:inv",
+        "skills:ste"
+       ]
+      }
+     ]
+    },
+    "classRestriction": "primary"
+   },
+   {
+    "_id": "VvMkGPNP5jOUvoK3",
+    "type": "ScaleValue",
+    "value": {},
+    "title": "Кость охоты",
+    "classRestriction": "primary",
+    "configuration": {
+     "identifier": "hunt-die",
+     "type": "dice",
+     "distance": {
+      "units": ""
+     },
+     "scale": {
+      "1": {
+       "number": 1,
+       "faces": 4,
+       "modifiers": []
+      },
+      "5": {
+       "number": 1,
+       "faces": 6,
+       "modifiers": []
+      },
+      "11": {
+       "number": 1,
+       "faces": 8,
+       "modifiers": []
+      },
+      "17": {
+       "number": 1,
+       "faces": 10,
+       "modifiers": []
+      }
+     }
+    }
+   },
+   {
+    "_id": "4bLEGqv0CeTaN5TN",
+    "type": "ScaleValue",
+    "value": {},
+    "title": "Цели Охоты",
+    "classRestriction": "primary",
+    "configuration": {
+     "identifier": "quarry-targets",
+     "type": "number",
+     "distance": {
+      "units": ""
+     },
+     "scale": {
+      "1": {
+       "value": 2
+      },
+      "5": {
+       "value": 3
+      },
+      "11": {
+       "value": 4
+      },
+      "17": {
+       "value": 5
+      }
+     }
+    }
+   },
+   {
+    "_id": "TO9bklj7kLSv2raf",
+    "type": "ScaleValue",
+    "value": {},
+    "title": "Чутьё Добычи",
+    "classRestriction": "primary",
+    "configuration": {
+     "identifier": "quarry-sense",
+     "type": "distance",
+     "distance": {
+      "units": "ft"
+     },
+     "scale": {
+      "1": {
+       "value": 15
+      },
+      "5": {
+       "value": 30
+      },
+      "11": {
+       "value": 60
+      },
+      "17": {
+       "value": 90
+      }
+     }
+    }
+   },
+   {
+    "_id": "CHhbyI5mbFQqhJUD",
+    "type": "AbilityScoreImprovement",
+    "level": 4,
+    "title": "",
+    "configuration": {
+     "points": 2,
+     "fixed": {},
+     "cap": {},
+     "locked": []
+    },
+    "value": {
+     "type": "asi"
+    }
+   },
+   {
+    "_id": "v9ZackFVrcGLSHej",
+    "type": "AbilityScoreImprovement",
+    "level": 8,
+    "title": "",
+    "configuration": {
+     "points": 2,
+     "fixed": {},
+     "cap": {},
+     "locked": []
+    },
+    "value": {
+     "type": "asi"
+    }
+   },
+   {
+    "_id": "578F7t8LMQ432un2",
+    "type": "AbilityScoreImprovement",
+    "level": 12,
+    "title": "",
+    "configuration": {
+     "points": 2,
+     "fixed": {},
+     "cap": {},
+     "locked": []
+    },
+    "value": {
+     "type": "asi"
+    }
+   },
+   {
+    "_id": "LOnwgz6BQXmmqbfl",
+    "type": "AbilityScoreImprovement",
+    "level": 16,
+    "title": "",
+    "configuration": {
+     "points": 2,
+     "fixed": {},
+     "cap": {},
+     "locked": []
+    },
+    "value": {
+     "type": "asi"
+    }
+   },
+   {
+    "_id": "Kr9I5qQYkbvKUxPO",
+    "type": "Subclass",
+    "level": 3,
+    "title": "Подкласс",
+    "hint": "",
+    "configuration": {},
+    "value": {
+     "document": null,
+     "uuid": null
+    }
+   },
+   {
+    "_id": "bmaf4pohPyVoT8IG",
+    "type": "ItemChoice",
+    "title": "Боевой стиль",
+    "icon": null,
+    "hint": "Выберите один боевой стиль (или «Воин друид»).",
+    "value": {
+     "added": {},
+     "replaced": {}
+    },
+    "configuration": {
+     "choices": {
+      "2": {
+       "count": 1,
+       "replacement": false
+      }
+     },
+     "allowDrops": true,
+     "type": "feat",
+     "pool": [
+      {
+       "uuid": "Compendium.laaru-dnd5-hw.classfeatures.Item.8YwPFv3UAPjWVDNf"
+      },
+      {
+       "uuid": "Compendium.laaru-dnd5-hw.classfeatures.Item.zSlV0O2rQMdoq6pB"
+      },
+      {
+       "uuid": "Compendium.laaru-dnd5-hw.classfeatures.Item.hCop9uJrWhF1QPb4"
+      },
+      {
+       "uuid": "Compendium.laaru-dnd5-hw.classfeatures.Item.mHcSjcHJ8oZu3hkb"
+      },
+      {
+       "uuid": "Compendium.laaru-dnd5-hw.classfeatures.Item.3QhKQxdimzqS2pVq"
+      },
+      {
+       "uuid": "Compendium.laaru-dnd5-hw.classfeatures.Item.IYzoDJqUku3FyBn2"
+      },
+      {
+       "uuid": "Compendium.laaru-dnd5-hw.classfeatures.Item.RanCqqgLtHzIs5WB"
+      }
+     ],
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     },
+     "restriction": {
+      "type": "",
+      "subtype": "",
+      "level": "",
+      "list": []
+     }
+    }
+   },
+   {
+    "_id": "jCLZlk3BeaJ9vrt9",
+    "type": "ItemGrant",
+    "level": 1,
+    "title": "Особенности 1 уровня",
+    "icon": null,
+    "value": {},
+    "configuration": {
+     "items": [
+      {
+       "uuid": "Compendium.sledopyt-kasoda.features.Item.OeJI3ANUXBfk9Z7N",
+       "optional": false
+      },
+      {
+       "uuid": "Compendium.sledopyt-kasoda.features.Item.Q7dAjWvcg9aIPrNX",
+       "optional": false
+      },
+      {
+       "uuid": "Compendium.sledopyt-kasoda.features.Item.QJgSMURL6sYTV7HR",
+       "optional": false
+      },
+      {
+       "uuid": "Compendium.sledopyt-kasoda.features.Item.mgJ7KQDWgocmv37j",
+       "optional": false
+      }
+     ],
+     "optional": false,
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     }
+    }
+   },
+   {
+    "_id": "CnYZDFTFx1Z1Zwhi",
+    "type": "ItemGrant",
+    "level": 2,
+    "title": "Особенность",
+    "icon": null,
+    "value": {},
+    "configuration": {
+     "items": [
+      {
+       "uuid": "Compendium.sledopyt-kasoda.features.Item.hehEejev7GwrhLeu",
+       "optional": false
+      }
+     ],
+     "optional": false,
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     }
+    }
+   },
+   {
+    "_id": "RZgVBTtL3EvRiEKu",
+    "type": "ItemGrant",
+    "level": 3,
+    "title": "Особенность",
+    "icon": null,
+    "value": {},
+    "configuration": {
+     "items": [
+      {
+       "uuid": "Compendium.sledopyt-kasoda.features.Item.2oVfNFtsqeBvzTwx",
+       "optional": false
+      }
+     ],
+     "optional": false,
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     }
+    }
+   },
+   {
+    "_id": "V6u2jKoG08V5TzFV",
+    "type": "ItemGrant",
+    "level": 5,
+    "title": "Особенность",
+    "icon": null,
+    "value": {},
+    "configuration": {
+     "items": [
+      {
+       "uuid": "Compendium.sledopyt-kasoda.features.Item.DtMxjwfLyzhsXiMk",
+       "optional": false
+      }
+     ],
+     "optional": false,
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     }
+    }
+   },
+   {
+    "_id": "bGoOsqqSt9gz4wsr",
+    "type": "ItemGrant",
+    "level": 6,
+    "title": "Особенность",
+    "icon": null,
+    "value": {},
+    "configuration": {
+     "items": [
+      {
+       "uuid": "Compendium.sledopyt-kasoda.features.Item.cgwnjgqKSz1gW68l",
+       "optional": false
+      }
+     ],
+     "optional": false,
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     }
+    }
+   },
+   {
+    "_id": "Mb4jSZi4BLJ56lC1",
+    "type": "ItemGrant",
+    "level": 9,
+    "title": "Особенности",
+    "icon": null,
+    "value": {},
+    "configuration": {
+     "items": [
+      {
+       "uuid": "Compendium.sledopyt-kasoda.features.Item.3VFWOMACjn3RBYoU",
+       "optional": false
+      },
+      {
+       "uuid": "Compendium.sledopyt-kasoda.features.Item.EjjkuF5SlWGV2FJN",
+       "optional": false
+      }
+     ],
+     "optional": false,
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     }
+    }
+   },
+   {
+    "_id": "3qJrn4Ymo09ocaFH",
+    "type": "ItemGrant",
+    "level": 10,
+    "title": "Особенность",
+    "icon": null,
+    "value": {},
+    "configuration": {
+     "items": [
+      {
+       "uuid": "Compendium.sledopyt-kasoda.features.Item.SyoDugvogo9j3Jap",
+       "optional": false
+      }
+     ],
+     "optional": false,
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     }
+    }
+   },
+   {
+    "_id": "tMvkowjFa57FTGMe",
+    "type": "ItemGrant",
+    "level": 13,
+    "title": "Особенность",
+    "icon": null,
+    "value": {},
+    "configuration": {
+     "items": [
+      {
+       "uuid": "Compendium.sledopyt-kasoda.features.Item.h8m9M9l4MUcvpuKd",
+       "optional": false
+      }
+     ],
+     "optional": false,
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     }
+    }
+   },
+   {
+    "_id": "YXBFKbnmgbYC7Gdj",
+    "type": "ItemGrant",
+    "level": 14,
+    "title": "Особенность",
+    "icon": null,
+    "value": {},
+    "configuration": {
+     "items": [
+      {
+       "uuid": "Compendium.sledopyt-kasoda.features.Item.NO6xJwBWLwg1I4qe",
+       "optional": false
+      }
+     ],
+     "optional": false,
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     }
+    }
+   },
+   {
+    "_id": "3jVB0QZB4XxEWRPv",
+    "type": "ItemGrant",
+    "level": 17,
+    "title": "Особенность",
+    "icon": null,
+    "value": {},
+    "configuration": {
+     "items": [
+      {
+       "uuid": "Compendium.sledopyt-kasoda.features.Item.Au1ZFSIzwONeWvTs",
+       "optional": false
+      }
+     ],
+     "optional": false,
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     }
+    }
+   },
+   {
+    "_id": "fhnBWiJDf78WUxaB",
+    "type": "ItemGrant",
+    "level": 18,
+    "title": "Особенность",
+    "icon": null,
+    "value": {},
+    "configuration": {
+     "items": [
+      {
+       "uuid": "Compendium.sledopyt-kasoda.features.Item.KqC4JaozFGV8RZtJ",
+       "optional": false
+      }
+     ],
+     "optional": false,
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     }
+    }
+   },
+   {
+    "_id": "IEHhY5U6QxiIl4wC",
+    "type": "ItemGrant",
+    "level": 19,
+    "title": "Особенность",
+    "icon": null,
+    "value": {},
+    "configuration": {
+     "items": [
+      {
+       "uuid": "Compendium.sledopyt-kasoda.features.Item.UNz0oaAMO7USfqVF",
+       "optional": false
+      }
+     ],
+     "optional": false,
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     }
+    }
+   },
+   {
+    "_id": "5zkgoy9erwDBy3WM",
+    "type": "ItemGrant",
+    "level": 20,
+    "title": "Особенность",
+    "icon": null,
+    "value": {},
+    "configuration": {
+     "items": [
+      {
+       "uuid": "Compendium.sledopyt-kasoda.features.Item.KVjEur9nq6AALXYJ",
+       "optional": false
+      }
+     ],
+     "optional": false,
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     }
+    }
+   }
+  ],
+  "spellcasting": {
+   "progression": "half",
+   "ability": "wis",
+   "preparation": {
+    "formula": ""
+   }
+  },
+  "wealth": "7",
+  "primaryAbility": {
+   "value": [
+    "dex",
+    "wis"
+   ],
+   "all": false
+  }
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "flags": {},
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!Qak4mT0GYewZacM5"
+}

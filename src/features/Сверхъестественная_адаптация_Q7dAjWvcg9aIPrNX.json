@@ -1,0 +1,206 @@
+{
+ "_id": "Q7dAjWvcg9aIPrNX",
+ "name": "Сверхъестественная адаптация",
+ "type": "feat",
+ "img": "icons/magic/nature/leaf-glow-triple-green.webp",
+ "system": {
+  "description": {
+   "value": "<p>Всякий раз, оканчивая Долгий отдых, вы можете адаптироваться к местности, в которой находитесь. На 11-м уровне можно выбрать вторую местность. Эффекты длятся до конца следующего Долгого отдыха.</p><p><strong>После Долгого отдыха включите соответствующий переключаемый эффект биома</strong> в этой особенности. Биомы:</p><ul><li><strong>Арктика.</strong> Сопротивление Холоду; нет вреда от температур не ниже −52 °C; преимущество при перемещении по льду.</li><li><strong>Болота.</strong> Сопротивление Ядом; преимущество против Отравленного и немагических болезней.</li><li><strong>Горы.</strong> Акклиматизация к высоте; игнор сильного ветра на Внимательность; скорость лазания = скорости передвижения (или +15 фт).</li><li><strong>Леса.</strong> Игнор осадков и густой растительности на Внимательность; преимущество на Скрытность; обнаружение растений с «Обманчивой внешностью».</li><li><strong>Подземье.</strong> Тёмное зрение 60 фт (или +30 фт); нет помехи на Восприятие из-за тусклого света; преимущество на Скрытность во Тьме.</li><li><strong>Пустыня.</strong> Сопротивление Огнём; нет вреда от температур не выше 52 °C; чувство существ под песком в 30 фт.</li><li><strong>Побережье/моря.</strong> Бой под водой без неудобств; задержка дыхания 10 мин; скорость плавания = скорости передвижения (или +15 фт).</li></ul><p><strong>В адаптированной местности:</strong></p><ul><li>Удвоенный Бонус мастерства для проверок Инт и Мдр, связанных с местностью.</li><li>Труднопроходимая местность не замедляет группу; группа не может заблудиться (кроме как из-за магии).</li><li>Преимущество на поиск пищи (вдвое больше).</li><li>При выслеживании: +5 к Выживанию; при успехе — точное количество, размеры и давность прохода существ.</li></ul>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "sverhadaptaciya",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 1",
+  "properties": [],
+  "advancement": []
+ },
+ "effects": [
+  {
+   "_id": "wDxVXfc2D5j73N3h",
+   "name": "Адаптация: Арктика",
+   "img": "icons/magic/water/snowflake-ice-snow-white.webp",
+   "type": "base",
+   "changes": [
+    {
+     "key": "system.traits.dr.value",
+     "mode": 2,
+     "value": "cold",
+     "priority": 20
+    }
+   ],
+   "disabled": true,
+   "transfer": false,
+   "duration": {
+    "startTime": null,
+    "seconds": null,
+    "rounds": null,
+    "turns": null
+   },
+   "description": "Сопротивление Холодом.",
+   "origin": null,
+   "tint": "#ffffff",
+   "statuses": [],
+   "flags": {},
+   "_key": "!items.effects!Q7dAjWvcg9aIPrNX.wDxVXfc2D5j73N3h"
+  },
+  {
+   "_id": "mMLS0E5kgCfV8K1x",
+   "name": "Адаптация: Болота",
+   "img": "icons/magic/nature/root-vine-caduceus-healing.webp",
+   "type": "base",
+   "changes": [
+    {
+     "key": "system.traits.dr.value",
+     "mode": 2,
+     "value": "poison",
+     "priority": 20
+    }
+   ],
+   "disabled": true,
+   "transfer": false,
+   "duration": {
+    "startTime": null,
+    "seconds": null,
+    "rounds": null,
+    "turns": null
+   },
+   "description": "Сопротивление Ядом.",
+   "origin": null,
+   "tint": "#ffffff",
+   "statuses": [],
+   "flags": {},
+   "_key": "!items.effects!Q7dAjWvcg9aIPrNX.mMLS0E5kgCfV8K1x"
+  },
+  {
+   "_id": "4ukCi1gBLo9wT3Wb",
+   "name": "Адаптация: Пустыня",
+   "img": "icons/magic/fire/flame-burning-campfire-yellow.webp",
+   "type": "base",
+   "changes": [
+    {
+     "key": "system.traits.dr.value",
+     "mode": 2,
+     "value": "fire",
+     "priority": 20
+    }
+   ],
+   "disabled": true,
+   "transfer": false,
+   "duration": {
+    "startTime": null,
+    "seconds": null,
+    "rounds": null,
+    "turns": null
+   },
+   "description": "Сопротивление Огнём.",
+   "origin": null,
+   "tint": "#ffffff",
+   "statuses": [],
+   "flags": {},
+   "_key": "!items.effects!Q7dAjWvcg9aIPrNX.4ukCi1gBLo9wT3Wb"
+  },
+  {
+   "_id": "dSliSXnvxhxja0Aa",
+   "name": "Адаптация: Подземье",
+   "img": "icons/magic/perception/eye-ringed-glow-angry-large-red.webp",
+   "type": "base",
+   "changes": [
+    {
+     "key": "system.attributes.senses.darkvision",
+     "mode": 4,
+     "value": "60",
+     "priority": 20
+    }
+   ],
+   "disabled": true,
+   "transfer": false,
+   "duration": {
+    "startTime": null,
+    "seconds": null,
+    "rounds": null,
+    "turns": null
+   },
+   "description": "Тёмное зрение 60 фт.",
+   "origin": null,
+   "tint": "#ffffff",
+   "statuses": [],
+   "flags": {},
+   "_key": "!items.effects!Q7dAjWvcg9aIPrNX.dSliSXnvxhxja0Aa"
+  },
+  {
+   "_id": "vX6MKKgVwUziqybd",
+   "name": "Адаптация: Горы",
+   "img": "icons/magic/movement/trail-streak-zigzag-yellow.webp",
+   "type": "base",
+   "changes": [
+    {
+     "key": "system.attributes.movement.climb",
+     "mode": 2,
+     "value": "15",
+     "priority": 20
+    }
+   ],
+   "disabled": true,
+   "transfer": false,
+   "duration": {
+    "startTime": null,
+    "seconds": null,
+    "rounds": null,
+    "turns": null
+   },
+   "description": "Скорость лазания.",
+   "origin": null,
+   "tint": "#ffffff",
+   "statuses": [],
+   "flags": {},
+   "_key": "!items.effects!Q7dAjWvcg9aIPrNX.vX6MKKgVwUziqybd"
+  },
+  {
+   "_id": "xTaMA1IztI4BVVOQ",
+   "name": "Адаптация: Побережье",
+   "img": "icons/magic/water/wave-water-blue.webp",
+   "type": "base",
+   "changes": [
+    {
+     "key": "system.attributes.movement.swim",
+     "mode": 2,
+     "value": "15",
+     "priority": 20
+    }
+   ],
+   "disabled": true,
+   "transfer": false,
+   "duration": {
+    "startTime": null,
+    "seconds": null,
+    "rounds": null,
+    "turns": null
+   },
+   "description": "Скорость плавания.",
+   "origin": null,
+   "tint": "#ffffff",
+   "statuses": [],
+   "flags": {},
+   "_key": "!items.effects!Q7dAjWvcg9aIPrNX.xTaMA1IztI4BVVOQ"
+  }
+ ],
+ "folder": null,
+ "sort": 1000,
+ "flags": {
+  "sledopyt-kasoda": {
+   "level": 1
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!Q7dAjWvcg9aIPrNX"
+}

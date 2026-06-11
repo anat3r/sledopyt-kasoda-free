@@ -1,0 +1,37 @@
+{
+ "_id": "4k27BleA7HO5TObl",
+ "name": "Охотник: Поиск слабостей",
+ "type": "feat",
+ "img": "icons/skills/targeting/crosshair-pointed-orange.webp",
+ "system": {
+  "description": {
+   "value": "<p>Когда вы выбираете существо своей Добычей, вы узнаёте, есть ли у него Иммунитеты, Сопротивления или Уязвимости, и какие именно.</p><p>Когда вы попадаете атакой оружием по Добыче, вы можете лишить её Сопротивления к виду урона по вашему выбору до начала вашего следующего хода.</p><p>Начиная с 11-го уровня, вы также можете лишить цель Иммунитета к одному состоянию или ослабить её Иммунитет к виду урона до Сопротивления.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "hunter-weakness",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 3",
+  "properties": [],
+  "advancement": []
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 3000,
+ "flags": {
+  "sledopyt-kasoda": {
+   "level": 3
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!4k27BleA7HO5TObl"
+}

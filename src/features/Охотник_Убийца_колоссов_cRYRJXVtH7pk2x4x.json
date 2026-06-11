@@ -1,0 +1,37 @@
+{
+ "_id": "cRYRJXVtH7pk2x4x",
+ "name": "Охотник: Убийца колоссов",
+ "type": "feat",
+ "img": "icons/skills/targeting/target-strike-triple-orange.webp",
+ "system": {
+  "description": {
+   "value": "<p><em>Вариант «Тактика охоты».</em></p><p>Когда вы попадаете атакой оружием по Добыче, которая больше вас как минимум на 1 категорию размера, это оружие наносит цели дополнительно 1d8 урона за каждую категорию разницы.</p><p>Например, будучи Среднего размера, по существу Огромного размера вы нанесёте 2d8 дополнительного урона.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "hunter-colossus",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 3",
+  "properties": [],
+  "advancement": []
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 3000,
+ "flags": {
+  "sledopyt-kasoda": {
+   "level": 3
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!cRYRJXVtH7pk2x4x"
+}

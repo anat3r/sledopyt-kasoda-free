@@ -1,0 +1,125 @@
+{
+ "_id": "KVjEur9nq6AALXYJ",
+ "name": "Охотничьи угодья",
+ "type": "feat",
+ "img": "icons/magic/nature/tree-spirit-green.webp",
+ "system": {
+  "description": {
+   "value": "<p>Выбирая Добычу, вы можете призвать призрачную дымку, воссоздающую дикую местность. Для вас и Добычи она заменяет реальность; другие видят сквозь неё.</p><p>30-футовая Эманация от вас, перемещается с вами. 1 минута или пока вы не Недееспособны / не окончите эффект.</p><p>Для Добычи это Труднопроходимая местность. Покидая её, Добыча совершает спасбросок Харизмы против СЛ ваших заклинаний; при успехе перемещение в этот ход не ограничено.</p><p>Пока Добыча внутри: ваши атаки по ней — с Преимуществом; её спасброски против ваших заклинаний/умений — с Помехой.</p><p><em>Использований: 1; восстановление после Долгого отдыха (либо за ячейку 4-го уровня и выше — вручную). При использовании ставит шаблон 30 фт (Эманация) на курсор.</em></p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "ohotnichi-ugodya",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 20",
+  "properties": [],
+  "advancement": [],
+  "uses": {
+   "spent": 0,
+   "max": "1",
+   "recovery": [
+    {
+     "period": "lr",
+     "type": "recoverAll",
+     "formula": ""
+    }
+   ]
+  },
+  "activities": {
+   "offoDUJMvxKC8sib": {
+    "_id": "offoDUJMvxKC8sib",
+    "type": "utility",
+    "activation": {
+     "type": "special",
+     "value": null,
+     "condition": "",
+     "override": false
+    },
+    "consumption": {
+     "targets": [
+      {
+       "type": "itemUses",
+       "target": "",
+       "value": "1",
+       "scaling": {
+        "mode": "",
+        "formula": ""
+       }
+      }
+     ],
+     "scaling": {
+      "allowed": false,
+      "max": ""
+     },
+     "spellSlot": false
+    },
+    "description": {
+     "chatFlavor": ""
+    },
+    "duration": {
+     "concentration": false,
+     "value": "",
+     "units": "",
+     "special": "",
+     "override": false
+    },
+    "effects": [],
+    "range": {
+     "units": "",
+     "special": "",
+     "override": false
+    },
+    "target": {
+     "template": {
+      "count": "",
+      "contiguous": false,
+      "type": "radius",
+      "size": "30",
+      "width": "",
+      "height": "",
+      "units": "ft"
+     },
+     "affects": {
+      "count": "",
+      "type": "",
+      "choice": false,
+      "special": ""
+     },
+     "prompt": true,
+     "override": false
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "roll": {
+     "formula": "",
+     "name": "",
+     "prompt": false,
+     "visible": false
+    },
+    "sort": 0
+   }
+  }
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 20000,
+ "flags": {
+  "sledopyt-kasoda": {
+   "level": 20
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!KVjEur9nq6AALXYJ"
+}

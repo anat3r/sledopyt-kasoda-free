@@ -1,0 +1,37 @@
+{
+ "_id": "3VFWOMACjn3RBYoU",
+ "name": "Мастер выживания",
+ "type": "feat",
+ "img": "icons/skills/wounds/injury-pain-body-orange.webp",
+ "system": {
+  "description": {
+   "value": "<p>Вы совершаете с Преимуществом проверки Инициативы и спасброски Ловкости против видимых эффектов (заклинания, ловушки). Нельзя быть Ослеплённым, Оглушённым или Недееспособным.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "master-vyzhivaniya",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 9",
+  "properties": [],
+  "advancement": []
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 9000,
+ "flags": {
+  "sledopyt-kasoda": {
+   "level": 9
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!3VFWOMACjn3RBYoU"
+}

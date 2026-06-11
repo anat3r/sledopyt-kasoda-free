@@ -1,0 +1,209 @@
+{
+ "_id": "CC8faeNMgtYmuGdv",
+ "name": "Охотник",
+ "type": "subclass",
+ "img": "icons/creatures/abilities/wolf-howl-moon-purple.webp",
+ "system": {
+  "description": {
+   "value": "<p>Вы — Охотник, готовый всюду преследовать добычу, чтобы защитить природу и народы мира от гибельных сил.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "hunter",
+  "classIdentifier": "sledopyt",
+  "spellcasting": {
+   "progression": "none",
+   "ability": ""
+  },
+  "advancement": [
+   {
+    "_id": "BhOxtyCR0rQmMi8j",
+    "type": "ItemGrant",
+    "level": 3,
+    "title": "Поиск слабостей",
+    "icon": null,
+    "value": {},
+    "configuration": {
+     "items": [
+      {
+       "uuid": "Compendium.sledopyt-kasoda.features.Item.4k27BleA7HO5TObl",
+       "optional": false
+      }
+     ],
+     "optional": false,
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     }
+    }
+   },
+   {
+    "_id": "suRvyrpbldPKMcZ0",
+    "type": "ItemChoice",
+    "title": "Тактика охоты",
+    "icon": null,
+    "hint": "Выберите один вариант (можно сменить на отдыхе).",
+    "value": {
+     "added": {},
+     "replaced": {}
+    },
+    "configuration": {
+     "choices": {
+      "3": {
+       "count": 1,
+       "replacement": false
+      }
+     },
+     "allowDrops": true,
+     "type": "feat",
+     "pool": [
+      {
+       "uuid": "Compendium.sledopyt-kasoda.features.Item.cRYRJXVtH7pk2x4x"
+      },
+      {
+       "uuid": "Compendium.sledopyt-kasoda.features.Item.9CQyaQZX9spH9HRR"
+      }
+     ],
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     },
+     "restriction": {
+      "type": "",
+      "subtype": "",
+      "level": "",
+      "list": []
+     }
+    }
+   },
+   {
+    "_id": "6XLP2TRYICtygSJK",
+    "type": "ItemChoice",
+    "title": "Стратегия охоты",
+    "icon": null,
+    "hint": "Выберите один вариант (можно сменить на отдыхе).",
+    "value": {
+     "added": {},
+     "replaced": {}
+    },
+    "configuration": {
+     "choices": {
+      "7": {
+       "count": 1,
+       "replacement": false
+      }
+     },
+     "allowDrops": true,
+     "type": "feat",
+     "pool": [
+      {
+       "uuid": "Compendium.sledopyt-kasoda.features.Item.jnTqiD9LfBz8nDJy"
+      },
+      {
+       "uuid": "Compendium.sledopyt-kasoda.features.Item.rCy2dxClVRArBmSp"
+      }
+     ],
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     },
+     "restriction": {
+      "type": "",
+      "subtype": "",
+      "level": "",
+      "list": []
+     }
+    }
+   },
+   {
+    "_id": "syO8IF8Vze6qHhe9",
+    "type": "ItemGrant",
+    "level": 11,
+    "title": "Магия охоты",
+    "icon": null,
+    "value": {},
+    "configuration": {
+     "items": [
+      {
+       "uuid": "Compendium.sledopyt-kasoda.features.Item.NvTXOu8tmTotPjmo",
+       "optional": false
+      }
+     ],
+     "optional": false,
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     }
+    }
+   },
+   {
+    "_id": "yCVRdJ2g8czQdaQW",
+    "type": "ItemGrant",
+    "level": 15,
+    "title": "Аватар охоты",
+    "icon": null,
+    "value": {},
+    "configuration": {
+     "items": [
+      {
+       "uuid": "Compendium.sledopyt-kasoda.features.Item.AW83AFtWRxQZ0sGu",
+       "optional": false
+      }
+     ],
+     "optional": false,
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     }
+    }
+   }
+  ]
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 0,
+ "flags": {},
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!CC8faeNMgtYmuGdv"
+}

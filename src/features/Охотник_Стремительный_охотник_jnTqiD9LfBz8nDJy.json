@@ -1,0 +1,66 @@
+{
+ "_id": "jnTqiD9LfBz8nDJy",
+ "name": "Охотник: Стремительный охотник",
+ "type": "feat",
+ "img": "icons/magic/movement/feet-bare-light-blue.webp",
+ "system": {
+  "description": {
+   "value": "<p><em>Вариант «Стратегия охоты».</em></p><p>Ваша скорость передвижения увеличивается на 10 футов, и вы можете Бонусным действием совершить Рывок, Отход или Засаду.</p><p>Когда вы попадаете атакой оружием по Добыче, которая не может вас видеть, вы наносите удвоенный урон от Бесконечной охоты.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "hunter-swift",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 7",
+  "properties": [],
+  "advancement": []
+ },
+ "effects": [
+  {
+   "_id": "rOiSjEpEComACaJ2",
+   "name": "Стремительный охотник",
+   "img": "icons/magic/movement/trail-streak-impact-blue.webp",
+   "type": "base",
+   "changes": [
+    {
+     "key": "system.attributes.movement.walk",
+     "mode": 2,
+     "value": "10",
+     "priority": 20
+    }
+   ],
+   "disabled": false,
+   "transfer": true,
+   "duration": {
+    "startTime": null,
+    "seconds": null,
+    "rounds": null,
+    "turns": null
+   },
+   "description": "+10 фт к скорости передвижения.",
+   "origin": null,
+   "tint": "#ffffff",
+   "statuses": [],
+   "flags": {},
+   "_key": "!items.effects!jnTqiD9LfBz8nDJy.rOiSjEpEComACaJ2"
+  }
+ ],
+ "folder": null,
+ "sort": 7000,
+ "flags": {
+  "sledopyt-kasoda": {
+   "level": 7
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!jnTqiD9LfBz8nDJy"
+}

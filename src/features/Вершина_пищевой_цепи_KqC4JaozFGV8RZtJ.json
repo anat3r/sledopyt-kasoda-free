@@ -1,0 +1,66 @@
+{
+ "_id": "KqC4JaozFGV8RZtJ",
+ "name": "Вершина пищевой цепи",
+ "type": "feat",
+ "img": "icons/creatures/abilities/mouth-teeth-sharp-red.webp",
+ "system": {
+  "description": {
+   "value": "<p>Совершая действие Атака против своей Добычи, вы можете совершить три атаки вместо двух.</p><p>Ваши атаки против Добычи критуют при «18–20».</p><p><em>Переключаемый эффект задаёт крит 18–20 — включайте только при атаках по Добыче.</em></p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "vershina-pishchevoj-cepi",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 18",
+  "properties": [],
+  "advancement": []
+ },
+ "effects": [
+  {
+   "_id": "Exu45teDqfBJfApr",
+   "name": "Вершина пищевой цепи — против Добычи",
+   "img": "icons/skills/targeting/target-strike-triple-red.webp",
+   "type": "base",
+   "changes": [
+    {
+     "key": "flags.dnd5e.weaponCriticalThreshold",
+     "mode": 3,
+     "value": "18",
+     "priority": 20
+    }
+   ],
+   "disabled": true,
+   "transfer": false,
+   "duration": {
+    "startTime": null,
+    "seconds": null,
+    "rounds": null,
+    "turns": null
+   },
+   "description": "Крит 18–20. Включать только при атаках по Добыче.",
+   "origin": null,
+   "tint": "#ffffff",
+   "statuses": [],
+   "flags": {},
+   "_key": "!items.effects!KqC4JaozFGV8RZtJ.Exu45teDqfBJfApr"
+  }
+ ],
+ "folder": null,
+ "sort": 18000,
+ "flags": {
+  "sledopyt-kasoda": {
+   "level": 18
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!KqC4JaozFGV8RZtJ"
+}

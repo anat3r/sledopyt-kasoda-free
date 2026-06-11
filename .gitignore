@@ -1,0 +1,18 @@
+# Build output (compiled LevelDB packs are built in CI and attached to releases)
+/packs/
+
+# Node
+/node_modules/
+npm-debug.log*
+
+# Release artifacts
+*.zip
+
+# Local Laaru unpack / scratch (never commit third-party paid content)
+/lar/
+/lar-json/
+/tmp/
+
+# OS
+.DS_Store
+Thumbs.db

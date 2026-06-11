@@ -1,0 +1,37 @@
+{
+ "_id": "mgJ7KQDWgocmv37j",
+ "name": "Оружейное мастерство",
+ "type": "feat",
+ "img": "icons/weapons/swords/swords-short.webp",
+ "system": {
+  "description": {
+   "value": "<p>Вы можете использовать свойства мастерства двух видов оружия, которыми владеете, по вашему выбору.</p><p>Завершая Долгий отдых, можно изменить выбранные виды оружия.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "oruzhejnoe-masterstvo",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 1",
+  "properties": [],
+  "advancement": []
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 1000,
+ "flags": {
+  "sledopyt-kasoda": {
+   "level": 1
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!mgJ7KQDWgocmv37j"
+}

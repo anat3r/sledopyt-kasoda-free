@@ -1,0 +1,37 @@
+{
+ "_id": "QJgSMURL6sYTV7HR",
+ "name": "Бесконечная охота",
+ "type": "feat",
+ "img": "icons/skills/targeting/crosshair-bars-yellow.webp",
+ "system": {
+  "description": {
+   "value": "<p>Когда вы совершаете бросок Инициативы, вы можете объявить видимое существо своей <strong>Добычей</strong> до конца боя. Если её хиты падают до 0, в начале следующего хода можно выбрать новую Добычу.</p><p>Пока существо — Добыча, оно не получает преимуществ от состояния Невидимый в пределах <strong>[[/r @scale.sledopyt.quarry-sense]] фт</strong> (15/30/60/90 фт на 1/5/11/17 уровнях).</p><p>Вы понимаете общий смысл слов Добычи.</p><p>Попадая по Добыче атакой оружием, вы дополнительно наносите <strong>[[/r @scale.sledopyt.hunt-die]]</strong> урона («Кость охоты» d4→d6→d8→d10).</p><p>Если бой кончился, а Добыча жива — можно запомнить её как цель Охоты: преимущество на Выживание для выслеживания и Интеллект для сведений; в 1 миле ощущаете слабое присутствие.</p><p>Можно помнить целей Охоты: <strong>[[/r @scale.sledopyt.quarry-targets]]</strong> (2; +1 на 5/11/17 уровнях). Сверх лимита — забываете одну.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "beskonechnaya-ohota",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 1",
+  "properties": [],
+  "advancement": []
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 1000,
+ "flags": {
+  "sledopyt-kasoda": {
+   "level": 1
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!QJgSMURL6sYTV7HR"
+}

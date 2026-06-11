@@ -1,0 +1,125 @@
+{
+ "_id": "NvTXOu8tmTotPjmo",
+ "name": "Охотник: Магия охоты",
+ "type": "feat",
+ "img": "icons/magic/symbols/runes-star-magenta.webp",
+ "system": {
+  "description": {
+   "value": "<p>Когда вы попадаете атакой оружием по Добыче, вы можете Бонусным действием оставить на ней магическую метку, которая пропадёт в конце следующего хода существа. Выберите эффект метки:</p><p><strong>Метка стайной охоты.</strong> Пока на существе есть метка, ваши союзники совершают броски атаки по цели с Преимуществом.</p><p><strong>Метка уязвимости.</strong> Пока на существе есть метка, оно совершает спасброски выбранной характеристики с Помехой.</p><p><strong>Метка сдерживания.</strong> Пока на существе есть метка, оно совершает все свои броски атаки с Помехой.</p><p><em>Использований: модификатор Мудрости (мин. 1); восстановление после Долгого отдыха, плюс 1 использование при сотворении заклинания 3-го уровня и выше (вручную).</em></p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "hunter-magic",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 11",
+  "properties": [],
+  "advancement": [],
+  "uses": {
+   "spent": 0,
+   "max": "max(1, @abilities.wis.mod)",
+   "recovery": [
+    {
+     "period": "lr",
+     "type": "recoverAll",
+     "formula": ""
+    }
+   ]
+  },
+  "activities": {
+   "1p0eYGtZMkkOWlim": {
+    "_id": "1p0eYGtZMkkOWlim",
+    "type": "utility",
+    "activation": {
+     "type": "bonus",
+     "value": 1,
+     "condition": "",
+     "override": false
+    },
+    "consumption": {
+     "targets": [
+      {
+       "type": "itemUses",
+       "target": "",
+       "value": "1",
+       "scaling": {
+        "mode": "",
+        "formula": ""
+       }
+      }
+     ],
+     "scaling": {
+      "allowed": false,
+      "max": ""
+     },
+     "spellSlot": false
+    },
+    "description": {
+     "chatFlavor": ""
+    },
+    "duration": {
+     "concentration": false,
+     "value": "",
+     "units": "",
+     "special": "",
+     "override": false
+    },
+    "effects": [],
+    "range": {
+     "units": "",
+     "special": "",
+     "override": false
+    },
+    "target": {
+     "template": {
+      "count": "",
+      "contiguous": false,
+      "type": "",
+      "size": "",
+      "width": "",
+      "height": "",
+      "units": ""
+     },
+     "affects": {
+      "count": "",
+      "type": "",
+      "choice": false,
+      "special": ""
+     },
+     "prompt": true,
+     "override": false
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "roll": {
+     "formula": "",
+     "name": "",
+     "prompt": false,
+     "visible": false
+    },
+    "sort": 0
+   }
+  }
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 11000,
+ "flags": {
+  "sledopyt-kasoda": {
+   "level": 11
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!NvTXOu8tmTotPjmo"
+}

@@ -1,0 +1,37 @@
+{
+ "_id": "UNz0oaAMO7USfqVF",
+ "name": "Эпический дар",
+ "type": "feat",
+ "img": "icons/magic/light/explosion-star-glow-blue-purple.webp",
+ "system": {
+  "description": {
+   "value": "<p>Вы получаете Эпический дар на ваш выбор, требованиям которого соответствуете.</p><p><em>Перетащите выбранный Эпический дар из компендиума черт на лист.</em></p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "epicheskij-dar",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 19",
+  "properties": [],
+  "advancement": []
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 19000,
+ "flags": {
+  "sledopyt-kasoda": {
+   "level": 19
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!UNz0oaAMO7USfqVF"
+}

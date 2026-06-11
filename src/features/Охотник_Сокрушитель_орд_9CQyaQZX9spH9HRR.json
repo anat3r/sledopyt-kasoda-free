@@ -1,0 +1,37 @@
+{
+ "_id": "9CQyaQZX9spH9HRR",
+ "name": "Охотник: Сокрушитель орд",
+ "type": "feat",
+ "img": "icons/skills/targeting/target-strike-triple-blue.webp",
+ "system": {
+  "description": {
+   "value": "<p><em>Вариант «Тактика охоты».</em></p><p>Когда вы совершаете бросок Инициативы, вы можете не выбирать Добычу, чтобы сосредоточиться на множестве врагов.</p><p>Когда вы совершаете атаку оружием по существу, вы можете совершить ещё одну атаку тем же оружием против другого существа в пределах 10 футов от первоначальной цели и в пределах досягаемости оружия, которое вы ещё не атаковали в этот ход.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "hunter-horde",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 3",
+  "properties": [],
+  "advancement": []
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 3000,
+ "flags": {
+  "sledopyt-kasoda": {
+   "level": 3
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!9CQyaQZX9spH9HRR"
+}

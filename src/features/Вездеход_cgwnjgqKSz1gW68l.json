@@ -1,0 +1,78 @@
+{
+ "_id": "cgwnjgqKSz1gW68l",
+ "name": "Вездеход",
+ "type": "feat",
+ "img": "icons/magic/movement/feet-bare-light-blue.webp",
+ "system": {
+  "description": {
+   "value": "<p>Пока вы не носите Тяжёлых доспехов, ваша скорость увеличивается на 10 футов, и вы получаете скорость лазания и плавания, равную скорости ходьбы.</p><p><em>Переключаемый эффект уже добавляет +10 фт. Отключите его, если надели Тяжёлый доспех.</em></p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "vezdehod",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 6",
+  "properties": [],
+  "advancement": []
+ },
+ "effects": [
+  {
+   "_id": "hXjJlvRaOfAYxsp5",
+   "name": "Вездеход",
+   "img": "icons/magic/movement/trail-streak-impact-blue.webp",
+   "type": "base",
+   "changes": [
+    {
+     "key": "system.attributes.movement.walk",
+     "mode": 2,
+     "value": "10",
+     "priority": 20
+    },
+    {
+     "key": "system.attributes.movement.climb",
+     "mode": 2,
+     "value": "15",
+     "priority": 20
+    },
+    {
+     "key": "system.attributes.movement.swim",
+     "mode": 2,
+     "value": "15",
+     "priority": 20
+    }
+   ],
+   "disabled": false,
+   "transfer": true,
+   "duration": {
+    "startTime": null,
+    "seconds": null,
+    "rounds": null,
+    "turns": null
+   },
+   "description": "Пока без Тяжёлого доспеха: +10 фт скорости; лазание/плавание = ходьбе.",
+   "origin": null,
+   "tint": "#ffffff",
+   "statuses": [],
+   "flags": {},
+   "_key": "!items.effects!cgwnjgqKSz1gW68l.hXjJlvRaOfAYxsp5"
+  }
+ ],
+ "folder": null,
+ "sort": 6000,
+ "flags": {
+  "sledopyt-kasoda": {
+   "level": 6
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!cgwnjgqKSz1gW68l"
+}

@@ -1,0 +1,70 @@
+{
+ "_id": "EjjkuF5SlWGV2FJN",
+ "name": "Язык природы",
+ "type": "feat",
+ "img": "icons/magic/nature/wolf-paw-glow-small-teal.webp",
+ "system": {
+  "description": {
+   "value": "<p>Вы можете неограниченно накладывать <em>Разговор с животными</em> и <em>Разговор с растениями</em>. Эти заклинания выдаются как всегда подготовленные (Мудрость) при получении этой особенности.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "yazyk-prirody",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 9",
+  "properties": [],
+  "advancement": [
+   {
+    "_id": "ZxpyjkRDR4RENQmz",
+    "type": "ItemGrant",
+    "level": 1,
+    "title": "Заклинания",
+    "icon": null,
+    "value": {},
+    "configuration": {
+     "items": [
+      {
+       "optional": false,
+       "uuid": "Compendium.laaru-dnd5-hw.spells.Item.OjL2GAHKM47DrEtD"
+      },
+      {
+       "optional": false,
+       "uuid": "Compendium.laaru-dnd5-hw.spells.Item.0c8C5FLHXNg8830T"
+      }
+     ],
+     "optional": false,
+     "spell": {
+      "preparation": "always",
+      "ability": [
+       "wis"
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      }
+     }
+    }
+   }
+  ]
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 9000,
+ "flags": {
+  "sledopyt-kasoda": {
+   "level": 9
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!EjjkuF5SlWGV2FJN"
+}
