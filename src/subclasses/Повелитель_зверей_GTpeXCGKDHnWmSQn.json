@@ -2,7 +2,7 @@
  "_id": "GTpeXCGKDHnWmSQn",
  "name": "Повелитель зверей",
  "type": "subclass",
- "img": "icons/magic/nature/wolf-paw-glow-small-teal.webp",
+ "img": "icons/creatures/abilities/paw-print-yellow.webp",
  "system": {
   "description": {
    "value": "<p>Повелитель зверей воплощает дружбу между цивилизацией и зверями дикого мира. Объединяя усилия, зверь и следопыт работают как одно целое, борясь с чудовищными врагами, угрожающими цивилизации и дикой природе.</p>",
@@ -73,6 +73,123 @@
        "requireSlot": false
       },
       "prepared": 0
+     }
+    }
+   },
+   {
+    "_id": "YInewZcf3CzrmYtz",
+    "type": "ItemChoice",
+    "title": "Черты Зверя-спутника",
+    "icon": null,
+    "hint": "Выберите 3 черты Зверя-спутника (можно заменять при получении уровня).",
+    "value": {
+     "added": {},
+     "replaced": {}
+    },
+    "configuration": {
+     "choices": {
+      "7": {
+       "count": 3,
+       "replacement": true
+      }
+     },
+     "allowDrops": true,
+     "type": "feat",
+     "pool": [
+      {
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.0tVte5AYt3ifjB7f"
+      },
+      {
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.zD26sNhWCZYzOVPD"
+      },
+      {
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.Sxfu9yMK33V7ti0I"
+      },
+      {
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.3n74Yc2TPdiMXxRx"
+      }
+     ],
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     },
+     "restriction": {
+      "type": "",
+      "subtype": "",
+      "level": "",
+      "list": []
+     }
+    }
+   },
+   {
+    "_id": "iFvYV6DLlhlpbYVb",
+    "type": "ItemChoice",
+    "title": "Черты Зверя-спутника (11+)",
+    "icon": null,
+    "hint": "На 11-м и 15-м уровнях выберите ещё по одной черте — доступны все, включая черты 11-го уровня.",
+    "value": {
+     "added": {},
+     "replaced": {}
+    },
+    "configuration": {
+     "choices": {
+      "11": {
+       "count": 1,
+       "replacement": true
+      },
+      "15": {
+       "count": 1,
+       "replacement": true
+      }
+     },
+     "allowDrops": true,
+     "type": "feat",
+     "pool": [
+      {
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.0tVte5AYt3ifjB7f"
+      },
+      {
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.zD26sNhWCZYzOVPD"
+      },
+      {
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.Sxfu9yMK33V7ti0I"
+      },
+      {
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.3n74Yc2TPdiMXxRx"
+      },
+      {
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.a8xvYGhgSVxTUEpZ"
+      },
+      {
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.7fLRWHYP562ommbT"
+      },
+      {
+       "uuid": "Compendium.sledopyt-kasoda-free.features.Item.jf6qiCgmWpQqReos"
+      }
+     ],
+     "spell": {
+      "ability": [
+       ""
+      ],
+      "uses": {
+       "max": "",
+       "per": "",
+       "requireSlot": false
+      },
+      "prepared": 0
+     },
+     "restriction": {
+      "type": "",
+      "subtype": "",
+      "level": "",
+      "list": []
      }
     }
    },

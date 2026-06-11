@@ -2,7 +2,7 @@
  "_id": "cgwnjgqKSz1gW68l",
  "name": "Вездеход",
  "type": "feat",
- "img": "icons/magic/movement/feet-bare-light-blue.webp",
+ "img": "icons/magic/movement/trail-streak-zigzag-teal.webp",
  "system": {
   "description": {
    "value": "<p>Пока вы не носите Тяжёлых доспехов, ваша скорость увеличивается на 10 футов, и вы получаете скорость лазания и плавания, равную скорости ходьбы.</p><p><em>Переключаемый эффект уже добавляет +10 фт. Отключите его, если надели Тяжёлый доспех.</em></p>",

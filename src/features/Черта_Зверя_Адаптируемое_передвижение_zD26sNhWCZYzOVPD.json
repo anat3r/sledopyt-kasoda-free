@@ -1,0 +1,84 @@
+{
+ "_id": "zD26sNhWCZYzOVPD",
+ "name": "Черта Зверя: Адаптируемое передвижение",
+ "type": "feat",
+ "img": "icons/creatures/mammals/deer-movement-leap-green.webp",
+ "system": {
+  "description": {
+   "value": "<p>Выберите скорость плавания или лазания (с 11-го уровня — также копания или полёта); Зверь получает её равной своей скорости ходьбы. Вы можете использовать Зверя как скакуна, даже будучи одного с ним размера или меньше.</p><p>В начале своего хода вы можете дать себе и Зверю +10 ко всем скоростям до конца следующего хода и совершать Рывок, Отход и Засаду Бонусным действием. Единожды воспользовавшись этим, вы не сможете повторить, пока не завершите Короткий или Долгий отдых.</p><p><em>Переключаемый эффект «+10 ко всем скоростям» — перетащите на токен Зверя.</em></p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "bm-trait-adapt",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 7",
+  "properties": [],
+  "advancement": []
+ },
+ "effects": [
+  {
+   "_id": "LZj3bNvr14ftjOCg",
+   "name": "Адаптируемое передвижение: +10 ко всем скоростям",
+   "img": "icons/magic/movement/trail-streak-impact-blue.webp",
+   "type": "base",
+   "changes": [
+    {
+     "key": "system.attributes.movement.walk",
+     "mode": 2,
+     "value": "10",
+     "priority": 20
+    },
+    {
+     "key": "system.attributes.movement.climb",
+     "mode": 2,
+     "value": "10",
+     "priority": 20
+    },
+    {
+     "key": "system.attributes.movement.swim",
+     "mode": 2,
+     "value": "10",
+     "priority": 20
+    },
+    {
+     "key": "system.attributes.movement.fly",
+     "mode": 2,
+     "value": "10",
+     "priority": 20
+    }
+   ],
+   "disabled": true,
+   "transfer": false,
+   "duration": {
+    "startTime": null,
+    "seconds": null,
+    "rounds": null,
+    "turns": null
+   },
+   "description": "Перетащите на токен Зверя и включите в начале хода: +10 ко всем скоростям до конца следующего хода.",
+   "origin": null,
+   "tint": "#ffffff",
+   "statuses": [],
+   "flags": {},
+   "_key": "!items.effects!zD26sNhWCZYzOVPD.LZj3bNvr14ftjOCg"
+  }
+ ],
+ "folder": null,
+ "sort": 7000,
+ "flags": {
+  "sledopyt-kasoda-free": {
+   "level": 7
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!zD26sNhWCZYzOVPD"
+}

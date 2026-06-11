@@ -2,7 +2,7 @@
   "id": "sledopyt-kasoda-free",
   "title": "Альтернативный Следопыт (Kasoda) — бесплатная версия",
   "description": "<p>Бесплатная (демонстрационная) редакция альтернативного Следопыта от Kasoda для D&D 5e. Основана на бесплатной версии PDF: полный класс 1–20 с сигнатурной механикой «Бесконечная охота» и сверхъестественной адаптацией к местности, плюс два подкласса — <strong>Охотник</strong> и <strong>Повелитель зверей</strong>.</p><p>Заклинания и боевые стили линкуются из модуля Laaru•Compendium•DnD14 (по желанию). Полная версия со всеми 10 подклассами распространяется отдельно.</p>",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "Неофициальная адаптация. Игровой контент © Kasoda / Svinomatus (boosty.to/kasoda) — все права у автора оригинала. Эта редакция основана на бесплатной версии PDF и распространяется как демонстрация. Код сборки (tools/, scripts/, .github/) — MIT. См. LICENSE.",
   "authors": [
     {
@@ -88,7 +88,7 @@
   "readme": "https://github.com/anat3r/sledopyt-kasoda-free/blob/main/README.md",
   "bugs": "https://github.com/anat3r/sledopyt-kasoda-free/issues",
   "manifest": "https://github.com/anat3r/sledopyt-kasoda-free/releases/latest/download/module.json",
-  "download": "https://github.com/anat3r/sledopyt-kasoda-free/releases/download/v0.1.0/module.zip",
+  "download": "https://github.com/anat3r/sledopyt-kasoda-free/releases/download/v0.2.0/module.zip",
   "esmodules": [
     "scripts/dependency-check.js"
   ]

@@ -2,7 +2,7 @@
  "_id": "DtMxjwfLyzhsXiMk",
  "name": "Дополнительная атака",
  "type": "feat",
- "img": "icons/skills/melee/blade-tips-triple-bronze.webp",
+ "img": "icons/skills/melee/weapons-crossed-swords-pink.webp",
  "system": {
   "description": {
    "value": "<p>Когда в свой ход вы совершаете действие Атака, вы можете совершить две атаки вместо одной.</p>",

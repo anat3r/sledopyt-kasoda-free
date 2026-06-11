@@ -1,0 +1,78 @@
+{
+ "_id": "a8xvYGhgSVxTUEpZ",
+ "name": "Черта Зверя: Неуловимый зверь",
+ "type": "feat",
+ "img": "icons/creatures/abilities/wing-batlike-purple-blue.webp",
+ "system": {
+  "description": {
+   "value": "<p><em>Доступна с 11-го уровня.</em></p><p>Зверь получает Иммунитет к состояниям &amp;Reference[grappled]{Схваченный}, &amp;Reference[restrained]{Опутанный} и &amp;Reference[paralyzed]{Парализованный}, и его скорость нельзя уменьшить магией.</p><p>Действием Зверь может стать призрачным на 10 минут: он перемещается сквозь существа и предметы как сквозь Труднопроходимую местность и получает [[/damage 2d10 force]]{2d10 урона силовым полем}, если оканчивает ход внутри предмета. Единожды воспользовавшись этим, вы не сможете повторить, пока не завершите Короткий или Долгий отдых.</p><p><em>Переключаемый эффект иммунитетов — перетащите на токен Зверя.</em></p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "bm-trait-elusive",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 11",
+  "properties": [],
+  "advancement": []
+ },
+ "effects": [
+  {
+   "_id": "isF5xMHi7zSU73Z8",
+   "name": "Неуловимый зверь: иммунитеты",
+   "img": "icons/creatures/abilities/wings-birdlike-blue.webp",
+   "type": "base",
+   "changes": [
+    {
+     "key": "system.traits.ci.value",
+     "mode": 2,
+     "value": "grappled",
+     "priority": 20
+    },
+    {
+     "key": "system.traits.ci.value",
+     "mode": 2,
+     "value": "restrained",
+     "priority": 20
+    },
+    {
+     "key": "system.traits.ci.value",
+     "mode": 2,
+     "value": "paralyzed",
+     "priority": 20
+    }
+   ],
+   "disabled": true,
+   "transfer": false,
+   "duration": {
+    "startTime": null,
+    "seconds": null,
+    "rounds": null,
+    "turns": null
+   },
+   "description": "Перетащите на токен Зверя и включите: иммунитет к Схвачен/Опутан/Парализован.",
+   "origin": null,
+   "tint": "#ffffff",
+   "statuses": [],
+   "flags": {},
+   "_key": "!items.effects!a8xvYGhgSVxTUEpZ.isF5xMHi7zSU73Z8"
+  }
+ ],
+ "folder": null,
+ "sort": 11000,
+ "flags": {
+  "sledopyt-kasoda-free": {
+   "level": 11
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!a8xvYGhgSVxTUEpZ"
+}

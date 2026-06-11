@@ -2,7 +2,7 @@
  "_id": "rCy2dxClVRArBmSp",
  "name": "Охотник: Сокрушитель армий",
  "type": "feat",
- "img": "icons/equipment/shield/heater-steel-worn-grey.webp",
+ "img": "icons/equipment/shield/heater-crystal-blue.webp",
  "system": {
   "description": {
    "value": "<p><em>Вариант «Стратегия охоты».</em></p><p>Каждый раз, когда существо попадает по вам атакой, вы получаете бонус +2 к КД до начала вашего следующего хода.</p><p>Бонус к КД увеличивается до +3, если по вам попала ваша Добыча.</p>",

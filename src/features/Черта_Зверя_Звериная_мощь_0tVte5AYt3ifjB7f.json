@@ -1,0 +1,37 @@
+{
+ "_id": "0tVte5AYt3ifjB7f",
+ "name": "Черта Зверя: Звериная мощь",
+ "type": "feat",
+ "img": "icons/weapons/fist/claw-straight-gold.webp",
+ "system": {
+  "description": {
+   "value": "<p>Пока вы в пределах 5 футов от Зверя-спутника, вы можете добавлять его модификаторы Силы и Ловкости к своим проверкам Силы и Ловкости.</p><p>Кроме того, когда вы попадаете атакой по Добыче в зоне досягаемости атак Зверя, вы можете Реакцией заставить его совершить атаку по этому существу (с Мультиатакой, если она есть). Единожды воспользовавшись этим, вы не сможете повторить, пока не завершите Короткий или Долгий отдых.</p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "bm-trait-might",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 7",
+  "properties": [],
+  "advancement": []
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 7000,
+ "flags": {
+  "sledopyt-kasoda-free": {
+   "level": 7
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!0tVte5AYt3ifjB7f"
+}
