@@ -1,15 +1,22 @@
 name: Release
 
-# Publish a GitHub Release named like "v0.4.0" — this workflow builds the
-# packs, stamps module.json with the version + download URL, zips the module,
-# and attaches module.json + module.zip to that release. The stable install URL
-# is always: https://github.com/<owner>/<repo>/releases/latest/download/module.json
+# Triggered by publishing a GitHub Release named like "v0.4.0" in THIS (source) repo.
+# The workflow builds the packs, stamps module.json with the version + the PUBLIC
+# distribution repo's URLs, zips the module, and publishes a matching Release with
+# module.json + module.zip to the PUBLIC distribution repo (sledopyt-kasoda-dist).
+#
+# This lets the source repo stay PRIVATE while users install from the public dist repo:
+#   https://github.com/<owner>/sledopyt-kasoda-dist/releases/latest/download/module.json
+#
+# Requires repo secret DIST_TOKEN: a fine-grained PAT with Contents: Read & Write
+# scoped to the sledopyt-kasoda-dist repo (GITHUB_TOKEN cannot write to another repo).
 on:
   release:
     types: [published]
 
-permissions:
-  contents: write
+env:
+  # Public distribution repo (same owner). Users install from here.
+  DIST_REPOSITORY: ${{ github.repository_owner }}/sledopyt-kasoda-dist
 
 jobs:
   release:
@@ -29,10 +36,10 @@ jobs:
       - name: Validate sources
         run: npm run validate
 
-      - name: Stamp module.json (version + URLs from the release tag)
+      - name: Stamp module.json (version + dist-repo URLs from the release tag)
         env:
           RELEASE_TAG: ${{ github.event.release.tag_name }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
+          # update-manifest.mjs prefers DIST_REPOSITORY (set above) for all public URLs.
         run: node tools/update-manifest.mjs
 
       - name: Compile compendium packs
@@ -41,9 +48,15 @@ jobs:
       - name: Create module.zip (files at archive root)
         run: zip -r module.zip module.json README.md LICENSE scripts packs -x '*/LOCK'
 
-      - name: Attach assets to the release
+      - name: Publish release to the PUBLIC distribution repo
         uses: softprops/action-gh-release@v2
         with:
+          repository: ${{ env.DIST_REPOSITORY }}
+          token: ${{ secrets.DIST_TOKEN }}
+          tag_name: ${{ github.event.release.tag_name }}
+          name: ${{ github.event.release.tag_name }}
+          body: ${{ github.event.release.body }}
+          make_latest: true
           files: |
             module.json
             module.zip

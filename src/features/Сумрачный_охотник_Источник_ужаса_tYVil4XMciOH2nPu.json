@@ -1,0 +1,125 @@
+{
+ "_id": "tYVil4XMciOH2nPu",
+ "name": "Сумрачный охотник: Источник ужаса",
+ "type": "feat",
+ "img": "icons/magic/unholy/strike-beam-blood-large-red-purple.webp",
+ "system": {
+  "description": {
+   "value": "<p>Вы сроднились с тьмой, переняв её привычки. Подобно ей, вы остаётесь незаметны для врагов и с лёгкостью повергаете их в ужас.</p><p><strong>Скрытое присутствие.</strong> Каждый раз, когда вы используете действие Засада, будучи Невидимым или находясь в области Тьмы или Тусклого света, вы можете полностью скрыть следы своего присутствия на 1 минуту, или пока вас не обнаружат. Пока вы скрываете своё присутствие, вас можно обнаружить только с помощью магии или Истинного зрения.</p><p><strong>Распространение страха.</strong> Каждый раз, когда хиты вашей Добычи опускаются до 0, её союзники, увидевшие или услышавшие это, должны совершить спасбросок Мудрости. При провале существо получает урон Психической энергией, равный вашему уровню, и становится Испуганным до конца вашего следующего хода.</p><p><em>«Скрытое присутствие» — использований: Бонус мастерства; восстановление после Долгого отдыха.</em></p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "gloom-fount",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 11",
+  "properties": [],
+  "advancement": [],
+  "uses": {
+   "spent": 0,
+   "max": "@prof",
+   "recovery": [
+    {
+     "period": "lr",
+     "type": "recoverAll",
+     "formula": ""
+    }
+   ]
+  },
+  "activities": {
+   "g0kwIlHekF0wuZrT": {
+    "_id": "g0kwIlHekF0wuZrT",
+    "type": "utility",
+    "activation": {
+     "type": "special",
+     "value": null,
+     "condition": "",
+     "override": false
+    },
+    "consumption": {
+     "targets": [
+      {
+       "type": "itemUses",
+       "target": "",
+       "value": "1",
+       "scaling": {
+        "mode": "",
+        "formula": ""
+       }
+      }
+     ],
+     "scaling": {
+      "allowed": false,
+      "max": ""
+     },
+     "spellSlot": false
+    },
+    "description": {
+     "chatFlavor": ""
+    },
+    "duration": {
+     "concentration": false,
+     "value": "",
+     "units": "",
+     "special": "",
+     "override": false
+    },
+    "effects": [],
+    "range": {
+     "units": "",
+     "special": "",
+     "override": false
+    },
+    "target": {
+     "template": {
+      "count": "",
+      "contiguous": false,
+      "type": "",
+      "size": "",
+      "width": "",
+      "height": "",
+      "units": ""
+     },
+     "affects": {
+      "count": "",
+      "type": "",
+      "choice": false,
+      "special": ""
+     },
+     "prompt": true,
+     "override": false
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "roll": {
+     "formula": "",
+     "name": "",
+     "prompt": false,
+     "visible": false
+    },
+    "sort": 0
+   }
+  }
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 11000,
+ "flags": {
+  "sledopyt-kasoda": {
+   "level": 11
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!tYVil4XMciOH2nPu"
+}

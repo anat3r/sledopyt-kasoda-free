@@ -3,6 +3,7 @@
   "title": "Альтернативный Следопыт (Kasoda)",
   "description": "<p>Альтернативный Следопыт от Kasoda (v1.1) — полная переработка класса для D&D 5e. Класс 1–20, сигнатурная механика «Бесконечная охота», сверхъестественная адаптация к местности и подклассы.</p><p>Заклинания и боевые стили линкуются из модуля Laaru•Compendium•DnD14.</p>",
   "version": "0.3.1",
+  "license": "Неофициальная адаптация. Игровой контент © Kasoda / Svinomatus (boosty.to/kasoda) — все права у автора оригинала, распространение по его разрешению. Код сборки (tools/, scripts/, .github/) — MIT. См. LICENSE.",
   "authors": [
     {
       "name": "Реализация в Foundry: сборка по PDF Kasoda v1.1"
@@ -83,11 +84,11 @@
     }
   ],
   "languages": [],
-  "url": "https://github.com/anat3r/sledopyt-kasoda",
-  "readme": "https://github.com/anat3r/sledopyt-kasoda/blob/main/README.md",
-  "bugs": "https://github.com/anat3r/sledopyt-kasoda/issues",
-  "manifest": "https://github.com/anat3r/sledopyt-kasoda/releases/latest/download/module.json",
-  "download": "https://github.com/anat3r/sledopyt-kasoda/releases/download/v0.3.1/module.zip",
+  "url": "https://github.com/anat3r/sledopyt-kasoda-dist",
+  "readme": "https://github.com/anat3r/sledopyt-kasoda-dist/blob/main/README.md",
+  "bugs": "https://github.com/anat3r/sledopyt-kasoda-dist/issues",
+  "manifest": "https://github.com/anat3r/sledopyt-kasoda-dist/releases/latest/download/module.json",
+  "download": "https://github.com/anat3r/sledopyt-kasoda-dist/releases/download/v0.3.1/module.zip",
   "esmodules": [
     "scripts/dependency-check.js"
   ]

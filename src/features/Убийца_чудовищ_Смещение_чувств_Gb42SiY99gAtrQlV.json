@@ -1,0 +1,125 @@
+{
+ "_id": "Gb42SiY99gAtrQlV",
+ "name": "Убийца чудовищ: Смещение чувств",
+ "type": "feat",
+ "img": "icons/magic/control/silhouette-hold-beam-blue.webp",
+ "system": {
+  "description": {
+   "value": "<p>Вы получаете способность искажать чужую магию. Когда ваша Добыча накладывает заклинание или телепортируется, вы можете Реакцией заставить её совершить спасбросок Мудрости. При провале вы сами выбираете цель или область для заклинания либо точку для телепортации, как если бы вы были источником эффекта, однако вы используете бонус к попаданию и СЛ спасброска исходного существа.</p><p>Единожды перенаправив заклинание или телепортацию с помощью этого умения, вы не можете сделать это вновь, пока не завершите Долгий отдых. Вы также можете восстановить его использование, потратив ячейку заклинаний 3-го уровня.</p><p><em>Использований: 1; восстановление после Долгого отдыха (либо за ячейку 3-го уровня — вручную).</em></p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "slayer-disrupt",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 11",
+  "properties": [],
+  "advancement": [],
+  "uses": {
+   "spent": 0,
+   "max": "1",
+   "recovery": [
+    {
+     "period": "lr",
+     "type": "recoverAll",
+     "formula": ""
+    }
+   ]
+  },
+  "activities": {
+   "PWOjODLLjWsl16tW": {
+    "_id": "PWOjODLLjWsl16tW",
+    "type": "utility",
+    "activation": {
+     "type": "reaction",
+     "value": 1,
+     "condition": "",
+     "override": false
+    },
+    "consumption": {
+     "targets": [
+      {
+       "type": "itemUses",
+       "target": "",
+       "value": "1",
+       "scaling": {
+        "mode": "",
+        "formula": ""
+       }
+      }
+     ],
+     "scaling": {
+      "allowed": false,
+      "max": ""
+     },
+     "spellSlot": false
+    },
+    "description": {
+     "chatFlavor": ""
+    },
+    "duration": {
+     "concentration": false,
+     "value": "",
+     "units": "",
+     "special": "",
+     "override": false
+    },
+    "effects": [],
+    "range": {
+     "units": "",
+     "special": "",
+     "override": false
+    },
+    "target": {
+     "template": {
+      "count": "",
+      "contiguous": false,
+      "type": "",
+      "size": "",
+      "width": "",
+      "height": "",
+      "units": ""
+     },
+     "affects": {
+      "count": "",
+      "type": "",
+      "choice": false,
+      "special": ""
+     },
+     "prompt": true,
+     "override": false
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "roll": {
+     "formula": "",
+     "name": "",
+     "prompt": false,
+     "visible": false
+    },
+    "sort": 0
+   }
+  }
+ },
+ "effects": [],
+ "folder": null,
+ "sort": 11000,
+ "flags": {
+  "sledopyt-kasoda": {
+   "level": 11
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!Gb42SiY99gAtrQlV"
+}

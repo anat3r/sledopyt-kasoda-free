@@ -1,18 +1,69 @@
-# Build output (compiled LevelDB packs are built in CI and attached to releases)
+# ───────────────────────── Build output ─────────────────────────
+# Compiled LevelDB packs are built in CI and attached to releases — never committed.
 /packs/
 
-# Node
+# ───────────────────────── Release artifacts ─────────────────────────
+*.zip
+module.zip
+
+# ───────────────────────── Node ─────────────────────────
 /node_modules/
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.pnp.*
+# (package-lock.json IS committed — do not ignore it.)
 
-# Release artifacts
-*.zip
+# ───────────────────────── Python (tools/*.py helpers) ─────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.mypy_cache/
+.ruff_cache/
 
-# Local Laaru unpack / scratch (never commit third-party paid content)
+# ───────────────────────── Third-party paid content (Laaru) ─────────────────────────
+# Laaru is paid content — NEVER commit it or any extraction of it.
+# Source lives outside the repo (../laaru-dnd5-hw); scratch extracts go to ../laaru-temp.
+# These patterns are a safety net in case anything lands inside the repo.
+/laaru-dnd5-hw/
+/laaru-temp/
+/.tmp-laaru/
+*laaru*temp*/
 /lar/
 /lar-json/
-/tmp/
 
-# OS
+# ───────────────────────── Scratch / temp ─────────────────────────
+/tmp/
+*.tmp
+*.bak
+*.orig
+
+# ───────────────────────── Local source docs (homebrew PDF, internal notes) ─────────────────────────
+/docs/
+CLAUDE.md
+
+# ───────────────────────── Secrets / local env ─────────────────────────
+.env
+.env.*
+*.pem
+*.key
+
+# ───────────────────────── Editors / IDE ─────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ───────────────────────── OS junk ─────────────────────────
 .DS_Store
+.AppleDouble
+.Spotlight-V100
+.Trashes
 Thumbs.db
+ehthumbs.db
+desktop.ini

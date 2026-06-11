@@ -3,7 +3,7 @@
 // and that every internal Compendium.<this-module>.* ItemGrant/ItemChoice reference resolves.
 import { readdirSync, readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
-import { dirname, join } from "node:path";
+import { dirname, join, basename } from "node:path";
 
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
 const SRC = join(ROOT, "src");
@@ -21,7 +21,7 @@ function walk(dir) {
     if (d.isDirectory()) walk(p);
     else if (d.name.endsWith(".json")) {
       const doc = JSON.parse(readFileSync(p, "utf8"));
-      allDocs.push({ doc, pack: dir.split("/").pop(), file: p });
+      allDocs.push({ doc, pack: basename(dir), file: p });
     }
   }
 }

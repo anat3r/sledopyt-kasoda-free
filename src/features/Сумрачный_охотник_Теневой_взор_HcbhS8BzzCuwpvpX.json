@@ -1,0 +1,154 @@
+{
+ "_id": "HcbhS8BzzCuwpvpX",
+ "name": "Сумрачный охотник: Теневой взор",
+ "type": "feat",
+ "img": "icons/magic/perception/eye-ringed-glow-angry-small-red.webp",
+ "system": {
+  "description": {
+   "value": "<p>Вы обретаете Тёмное зрение дальностью 60 футов. Если у вас уже есть Тёмное зрение, когда вы получаете это умение, то его дальность увеличивается на 60 футов.</p><p>Вы также искусны в уклонении от существ, которые полагаются на Тёмное зрение. Если вы полностью находитесь в области Тьмы, то для любого существа, которое может видеть вас в этой Темноте только с помощью Тёмного зрения, вы считаетесь имеющим состояние Невидимый.</p><p>Бонусным действием вы можете сконцентрироваться на своих чувствах, чтобы видеть в магической темноте на расстоянии 30 футов.</p><p><em>Использований: Бонус мастерства; восстановление после Долгого отдыха. Тёмное зрение +60 фт применяется автоматически.</em></p>",
+   "chat": ""
+  },
+  "source": {
+   "custom": "Альтернативный Следопыт (Kasoda) v1.1",
+   "rules": "2024",
+   "revision": 1
+  },
+  "identifier": "gloom-umbral",
+  "type": {
+   "value": "class",
+   "subtype": ""
+  },
+  "requirements": "Следопыт 3",
+  "properties": [],
+  "advancement": [],
+  "uses": {
+   "spent": 0,
+   "max": "@prof",
+   "recovery": [
+    {
+     "period": "lr",
+     "type": "recoverAll",
+     "formula": ""
+    }
+   ]
+  },
+  "activities": {
+   "Pg6dPiS2pfh89b0B": {
+    "_id": "Pg6dPiS2pfh89b0B",
+    "type": "utility",
+    "activation": {
+     "type": "bonus",
+     "value": 1,
+     "condition": "",
+     "override": false
+    },
+    "consumption": {
+     "targets": [
+      {
+       "type": "itemUses",
+       "target": "",
+       "value": "1",
+       "scaling": {
+        "mode": "",
+        "formula": ""
+       }
+      }
+     ],
+     "scaling": {
+      "allowed": false,
+      "max": ""
+     },
+     "spellSlot": false
+    },
+    "description": {
+     "chatFlavor": ""
+    },
+    "duration": {
+     "concentration": false,
+     "value": "",
+     "units": "",
+     "special": "",
+     "override": false
+    },
+    "effects": [],
+    "range": {
+     "units": "",
+     "special": "",
+     "override": false
+    },
+    "target": {
+     "template": {
+      "count": "",
+      "contiguous": false,
+      "type": "",
+      "size": "",
+      "width": "",
+      "height": "",
+      "units": ""
+     },
+     "affects": {
+      "count": "",
+      "type": "",
+      "choice": false,
+      "special": ""
+     },
+     "prompt": true,
+     "override": false
+    },
+    "uses": {
+     "spent": 0,
+     "max": "",
+     "recovery": []
+    },
+    "roll": {
+     "formula": "",
+     "name": "",
+     "prompt": false,
+     "visible": false
+    },
+    "sort": 0
+   }
+  }
+ },
+ "effects": [
+  {
+   "_id": "tpun7dEUFt1QXYsL",
+   "name": "Теневой взор",
+   "img": "icons/magic/perception/eye-ringed-glow-angry-large-red.webp",
+   "type": "base",
+   "changes": [
+    {
+     "key": "system.attributes.senses.darkvision",
+     "mode": 2,
+     "value": "60",
+     "priority": 20
+    }
+   ],
+   "disabled": false,
+   "transfer": true,
+   "duration": {
+    "startTime": null,
+    "seconds": null,
+    "rounds": null,
+    "turns": null
+   },
+   "description": "Тёмное зрение +60 фт.",
+   "origin": null,
+   "tint": "#ffffff",
+   "statuses": [],
+   "flags": {},
+   "_key": "!items.effects!HcbhS8BzzCuwpvpX.tpun7dEUFt1QXYsL"
+  }
+ ],
+ "folder": null,
+ "sort": 3000,
+ "flags": {
+  "sledopyt-kasoda": {
+   "level": 3
+  }
+ },
+ "_stats": {
+  "systemId": "dnd5e"
+ },
+ "_key": "!items!HcbhS8BzzCuwpvpX"
+}
