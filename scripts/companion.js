@@ -5,6 +5,7 @@ const MODULE_ID = "sledopyt-kasoda-free";
 const FLAG_IMPRINTS = "imprints";       // [{uuid, name, cr}]
 const FLAG_ACTIVE   = "activeImprint";  // index in imprints array
 const FIGURINE_UUID_FLAG = "figurineItemId"; // actor flag → figurine item id
+const FIGURINE_COMPENDIUM_UUID = `Compendium.${MODULE_ID}.features.Item.VqHoWsXCGHkZTUbY`;
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -351,16 +352,12 @@ async function updateCompanionHp(rangerActor) {
  * Проверяет, что статуэтка ещё не создана (по флагу isFigurine).
  */
 async function createFigurine(actor) {
+  if (!actor) return ui.notifications.error("Нет актёра для добавления статуэтки.");
   if (_getFigurineItem(actor)) {
     return ui.notifications.warn("Статуэтка уже есть в вашем инвентаре.");
   }
-  const pack = game.packs.get(`${MODULE_ID}.features`);
-  if (!pack) return ui.notifications.error("Пак features модуля не найден.");
-  const index = await pack.getIndex();
-  const entry = index.find(e => e.flags?.[MODULE_ID]?.isFigurine === true);
-  if (!entry) return ui.notifications.error("Статуэтка не найдена в паке модуля.");
-  const figurineDoc = await pack.getDocument(entry._id);
-  if (!figurineDoc) return ui.notifications.error("Не удалось загрузить статуэтку.");
+  const figurineDoc = await fromUuid(FIGURINE_COMPENDIUM_UUID).catch(() => null);
+  if (!figurineDoc) return ui.notifications.error("Статуэтка не найдена в паке модуля. Убедитесь, что модуль активирован.");
   const [created] = await actor.createEmbeddedDocuments("Item", [figurineDoc.toObject()]);
   ui.notifications.info(`Статуэтка «${created.name}» добавлена в инвентарь.`);
 }

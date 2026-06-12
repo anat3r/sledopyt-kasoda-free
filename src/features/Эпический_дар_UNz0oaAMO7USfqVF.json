@@ -2,7 +2,7 @@
  "_id": "UNz0oaAMO7USfqVF",
  "name": "Эпический дар",
  "type": "feat",
- "img": "icons/commodities/treasure/token-runed-circle-green.webp",
+ "img": "modules/sledopyt-kasoda-free/assets/icons/trophy.svg",
  "system": {
   "description": {
    "value": "<p>Вы получаете Эпический дар на ваш выбор, требованиям которого соответствуете.</p><p><em>Перетащите выбранный Эпический дар из компендиума черт на лист.</em></p>",
