@@ -385,6 +385,23 @@ Hooks.on("dnd5e.levelUp", (actor, updates) => {
   updateCompanionHp(actor);
 });
 
+// Intercept figurine / companion-feat activity usage — run our dialogs instead of
+// dnd5e's default usage flow (which would just post a plain empty chat card).
+Hooks.on("dnd5e.preUseActivity", (activity, _usageConfig, _messageConfig, _dialogConfig) => {
+  const item = activity.item;
+  switch (activity.id ?? activity._id) {
+    case "0RViZMYv0UB3gtBI": // Создать статуэтку (Спутник следопыта)
+      createFigurine(item?.actor);
+      return false;
+    case "gxmZmRlXKNKfwLA7": // Привязать существо (Статуэтка)
+      bindBeast(item);
+      return false;
+    case "j8GuHvtcBOjhL15E": // Призвать Зверя (Статуэтка)
+      summonBeast(item);
+      return false;
+  }
+});
+
 // Auto-apply traits when a companion token is placed on scene by our summon
 Hooks.on("createToken", async (tokenDoc) => {
   const actor = tokenDoc?.actor;
