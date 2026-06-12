@@ -2,7 +2,7 @@
  "_id": "NO6xJwBWLwg1I4qe",
  "name": "Охотничья концентрация",
  "type": "feat",
- "img": "icons/magic/control/buff-flight-wings-blue.webp",
+ "img": "modules/sledopyt-kasoda-free/assets/icons/concentration-orb.svg",
  "system": {
   "description": {
    "value": "<p>Пока вы концентрируетесь на заклинании Следопыта, в начале своего хода можно получить одно преимущество:</p><p><strong>Выносливость охотника.</strong> 1d10 + мод. Мудрости временных хитов (мин. 1) ИЛИ окончить на себе Отравленный, Ослеплённый или Оглохший.</p><p><strong>Меткость охотника.</strong> Перед атакой по Добыче добавьте мод. Мудрости к броску атаки или урона.</p>",
